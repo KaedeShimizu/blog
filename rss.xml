@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Kaede的小窝</title>
+    <link>https://kaedeshimizu.github.io</link>
+    <atom:link href="https://kaedeshimizu.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <description>鹰击长空，鱼翔浅底，万类霜天竞自由！</description>
+    <generator>Solo, v4.4.0, https://b3log.org/solo</generator>
+    <lastBuildDate>Thu, 06 Apr 2023 19:59:16 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <item>
+      <title>论“应试教育”</title>
+      <link>https://kaedeshimizu.github.io/articles/2023/04/06/1680782335507.html</link>
+      <description/>
+      <author>Kaede</author>
+      <guid>https://kaedeshimizu.github.io/articles/2023/04/06/1680782335507.html</guid>
+      <category>教育</category>
+      <category>评论</category>
+      <pubDate>Thu, 06 Apr 2023 19:58:55 +0800</pubDate>
+    </item>
+    <item>
+      <title>翻译器-中英互译</title>
+      <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680704182477.html</link>
+      <description/>
+      <author>Kaede</author>
+      <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680704182477.html</guid>
+      <category>Python</category>
+      <category>工具</category>
+      <pubDate>Wed, 05 Apr 2023 22:16:22 +0800</pubDate>
+    </item>
+    <item>
+      <title>转码解码-加密解密器</title>
+      <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680703477027.html</link>
+      <description/>
+      <author>Kaede</author>
+      <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680703477027.html</guid>
+      <category>Python</category>
+      <category>工具</category>
+      <pubDate>Wed, 05 Apr 2023 22:04:37 +0800</pubDate>
+    </item>
+    <item>
+      <title>《中国2185》</title>
+      <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680692359158.html</link>
+      <description/>
+      <author>Kaede</author>
+      <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680692359158.html</guid>
+      <category>杂谈</category>
+      <pubDate>Wed, 05 Apr 2023 19:08:49 +0800</pubDate>
+    </item>
+    <item>
+      <title>关于博客系统的选用</title>
+      <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680686960404.html</link>
+      <description/>
+      <author>Kaede</author>
+      <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680686960404.html</guid>
+      <category>杂谈</category>
+      <category>评论</category>
+      <pubDate>Wed, 05 Apr 2023 17:29:20 +0800</pubDate>
+    </item>
+    <item>
+      <title>Hello World~</title>
+      <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680686487692.html</link>
+      <description/>
+      <author>Kaede</author>
+      <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680686487692.html</guid>
+      <category>杂谈</category>
+      <pubDate>Wed, 05 Apr 2023 17:22:10 +0800</pubDate>
+    </item>
+  </channel>
+</rss>
