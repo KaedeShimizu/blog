@@ -6,17 +6,27 @@
     <atom:link href="https://kaedeshimizu.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     <description>鹰击长空，鱼翔浅底，万类霜天竞自由！</description>
     <generator>Solo, v4.4.0, https://b3log.org/solo</generator>
-    <lastBuildDate>Thu, 06 Apr 2023 19:59:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 06 Apr 2023 21:34:11 +0800</lastBuildDate>
     <language>zh-cn</language>
+    <item>
+      <title>《中国2185》</title>
+      <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680692359158.html</link>
+      <description/>
+      <author>Kaede</author>
+      <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680692359158.html</guid>
+      <category>小说</category>
+      <category>杂谈</category>
+      <pubDate>Thu, 06 Apr 2023 21:32:32 +0800</pubDate>
+    </item>
     <item>
       <title>论“应试教育”</title>
       <link>https://kaedeshimizu.github.io/articles/2023/04/06/1680782335507.html</link>
       <description/>
       <author>Kaede</author>
       <guid>https://kaedeshimizu.github.io/articles/2023/04/06/1680782335507.html</guid>
-      <category>教育</category>
       <category>评论</category>
-      <pubDate>Thu, 06 Apr 2023 19:58:55 +0800</pubDate>
+      <category>教育</category>
+      <pubDate>Thu, 06 Apr 2023 21:17:10 +0800</pubDate>
     </item>
     <item>
       <title>翻译器-中英互译</title>
@@ -24,8 +34,8 @@
       <description/>
       <author>Kaede</author>
       <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680704182477.html</guid>
-      <category>Python</category>
       <category>工具</category>
+      <category>Python</category>
       <pubDate>Wed, 05 Apr 2023 22:16:22 +0800</pubDate>
     </item>
     <item>
@@ -39,22 +49,13 @@
       <pubDate>Wed, 05 Apr 2023 22:04:37 +0800</pubDate>
     </item>
     <item>
-      <title>《中国2185》</title>
-      <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680692359158.html</link>
-      <description/>
-      <author>Kaede</author>
-      <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680692359158.html</guid>
-      <category>杂谈</category>
-      <pubDate>Wed, 05 Apr 2023 19:08:49 +0800</pubDate>
-    </item>
-    <item>
       <title>关于博客系统的选用</title>
       <link>https://kaedeshimizu.github.io/articles/2023/04/05/1680686960404.html</link>
       <description/>
       <author>Kaede</author>
       <guid>https://kaedeshimizu.github.io/articles/2023/04/05/1680686960404.html</guid>
-      <category>杂谈</category>
       <category>评论</category>
+      <category>杂谈</category>
       <pubDate>Wed, 05 Apr 2023 17:29:20 +0800</pubDate>
     </item>
     <item>
