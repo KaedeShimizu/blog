@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>工具 &#8211; Kaedeの小窝</title>
+	<atom:link href="./../../%E5%B7%A5%E5%85%B7/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Kaede的个人博客</description>
+	<lastBuildDate>Fri, 07 Apr 2023 12:46:18 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2023/04/cropped-cropped-00001-371256660-32x32.png</url>
+	<title>工具 &#8211; Kaedeの小窝</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>翻译器-中英互译</title>
+		<link>./../../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/index.html</link>
+					<comments>./../../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 12:19:49 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[工具]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=28</guid>
+
+					<description><![CDATA[使用方法 只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中 在这里只提供一个链接&#038;n</div><div class="blog-btn"><a href="./../../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading" id="toc_h2_1">使用方法</h2>
+
+
+
+<p class="has-medium-font-size">只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中</p>
+
+
+
+<p class="has-medium-font-size">在这里只提供一个链接&nbsp;<a href="https://huggingface.co/Helsinki-NLP/opus-mt-zh-en" target="_blank" rel="noreferrer noopener">中译英</a>&nbsp;以及&nbsp;<a href="https://huggingface.co/Helsinki-NLP/opus-mt-en-zh" target="_blank" rel="noreferrer noopener">英译中</a>&nbsp;的模型。</p>
+
+
+
+<p class="has-medium-font-size">然后输入<code>streamlit run webui.py</code>或者<code>python webui_gradio.py</code>就可以啦~放心使用，本程序不连接互联网，没有任何直接效益，完全免费。</p>
+
+
+
+<p class="has-medium-font-size">注意，你可能会需要一定性能的电脑，否则容易出现卡顿；如果翻译出现了问题，建议多试几次，模型本身有概率出现问题。</p>
+
+
+
+<p class="has-medium-font-size">运行界面如下(gradio)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="650" height="470" src="./../../../wp-content/uploads/2023/04/image-1.png" alt="" class="wp-image-29" srcset="./../../../wp-content/uploads/2023/04/image-1.png 650w, ./../../../wp-content/uploads/2023/04/image-1-300x217.png 300w" sizes="(max-width: 650px) 100vw, 650px" /></figure></div>
+
+
+<h2 class="wp-block-heading">下载</h2>
+
+
+
+<div class="wp-block-file"><a id="wp-block-file--media-8efc01bf-307f-41e9-a52c-f4eb0e483062" href="./../../../wp-content/uploads/2023/04/Kaede-translate.zip">Kaede-translate</a><a href="./../../../wp-content/uploads/2023/04/Kaede-translate.zip" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-8efc01bf-307f-41e9-a52c-f4eb0e483062">下载</a></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>转码解码-加密解密器</title>
+		<link>./../../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/index.html</link>
+					<comments>./../../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 12:16:33 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[工具]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=24</guid>
+
+					<description><![CDATA[关于&#38;使用方法 随手写的一个小程序，运行在Python 3.10.9，没有什么依赖，只需要安装一个gr</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading" id="toc_h2_1">关于&amp;使用方法</h2>
+
+
+
+<p class="has-medium-font-size">随手写的一个小程序，运行在<code>Python 3.10.9</code>，没有什么依赖，只需要安装一个gradio用来构建页面即可：<code>pip install gradio</code></p>
+
+
+
+<p class="has-medium-font-size">然后，直接在当前文件夹打开终端，输入<code>python webui_gradio.py</code>即可，会自动在浏览器中打开一个网页，运行情况如下图：</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="638" height="567" src="./../../../wp-content/uploads/2023/04/image.png" alt="" class="wp-image-25" srcset="./../../../wp-content/uploads/2023/04/image.png 638w, ./../../../wp-content/uploads/2023/04/image-300x267.png 300w" sizes="(max-width: 638px) 100vw, 638px" /></figure></div>
+
+
+<h2 class="wp-block-heading" id="toc_h2_2">文件下载</h2>
+
+
+
+<p class="has-medium-font-size">直接提供啦，不提供什么外部链接，没啥意思。</p>
+
+
+
+<div class="wp-block-file"><a id="wp-block-file--media-32dcabf5-bc9a-4f4c-b259-012df032cb78" href="./../../../wp-content/uploads/2023/04/kaede-encode.zip">kaede-encode</a><a href="./../../../wp-content/uploads/2023/04/kaede-encode.zip" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-32dcabf5-bc9a-4f4c-b259-012df032cb78">下载</a></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nginx &#8211; Kaedeの小窝</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Kaede的个人博客</description>
+	<lastBuildDate>Fri, 07 Apr 2023 13:38:21 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2023/04/cropped-cropped-00001-371256660-32x32.png</url>
+	<title>nginx &#8211; Kaedeの小窝</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>解决Nginx下WordPress Nginx 404的问题</title>
+		<link>./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html</link>
+					<comments>./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 13:38:21 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=71</guid>
+
+					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+										<content:encoded><![CDATA[
+<p>通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.htaccess。</p>
+
+
+
+<p>这里以PHPStudy举例子，直接在网站-管理-伪静态输入下面的内容即可</p>
+
+
+
+<pre class="wp-block-code"><code>location / {
+        if (-f $request_filename/index.html){
+               rewrite (.*) $1/index.html break;
+        }
+        if (-f $request_filename/index.php){
+               rewrite (.*) $1/index.php;
+         }
+        if (!-f $request_filename){
+               rewrite (.*) /index.php;
+         }
+}
+rewrite /wp-admin$ $scheme://$host$uri/ permanent;</code></pre>
+
+
+
+<p>然后，应该就可以正常进行访问了√</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

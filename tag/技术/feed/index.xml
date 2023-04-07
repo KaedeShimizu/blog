@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>技术 &#8211; Kaedeの小窝</title>
+	<atom:link href="./../../%E6%8A%80%E6%9C%AF/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Kaede的个人博客</description>
+	<lastBuildDate>Fri, 07 Apr 2023 14:27:43 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2023/04/cropped-cropped-00001-371256660-32x32.png</url>
+	<title>技术 &#8211; Kaedeの小窝</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>通过Simply Static将WP转换为静态站点</title>
+		<link>./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html</link>
+					<comments>./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 14:27:43 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=110</guid>
+
+					<description><![CDATA[主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的</div><div class="blog-btn"><a href="./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+										<content:encoded><![CDATA[
+<p class="has-medium-font-size">主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的使用方法。</p>
+
+
+
+<p>首先，保证你的PHP版本能够安装这个插件，然后直接搜索安装即可。</p>
+
+
+
+<h2 class="wp-block-heading">具体步骤</h2>
+
+
+
+<p>后台——设置——固定链接，选择自定义结构，使用.html后缀的固定链接，如：</p>
+
+
+
+<pre class="wp-block-code"><code>/%postname%.html</code></pre>
+
+
+
+<p>然后，启动插件，进入插件的Settings进行相关的设置，使用相对路径，直接一个/就行，或者使用脱机文档也可以，随后直接生成即可√</p>
+
+
+
+<p>注意生成的路径！别找不到了</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>解决Nginx下WordPress Nginx 404的问题</title>
+		<link>./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html</link>
+					<comments>./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 13:38:21 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[WordPress]]></category>
+		<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=71</guid>
+
+					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+										<content:encoded><![CDATA[
+<p>通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.htaccess。</p>
+
+
+
+<p>这里以PHPStudy举例子，直接在网站-管理-伪静态输入下面的内容即可</p>
+
+
+
+<pre class="wp-block-code"><code>location / {
+        if (-f $request_filename/index.html){
+               rewrite (.*) $1/index.html break;
+        }
+        if (-f $request_filename/index.php){
+               rewrite (.*) $1/index.php;
+         }
+        if (!-f $request_filename){
+               rewrite (.*) /index.php;
+         }
+}
+rewrite /wp-admin$ $scheme://$host$uri/ permanent;</code></pre>
+
+
+
+<p>然后，应该就可以正常进行访问了√</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>关于博客系统的选用</title>
+		<link>./../../../2023/04/07/%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%80%89%e7%94%a8/index.html</link>
+					<comments>./../../../2023/04/07/%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%80%89%e7%94%a8/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 12:13:14 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=22</guid>
+
+					<description><![CDATA[我本来想用WordPress，但是出现了奇怪的问题，我无法进行修复；于是，我更换了solo博客系统，这次感觉好</div><div class="blog-btn"><a href="./../../../2023/04/07/%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%80%89%e7%94%a8/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+										<content:encoded><![CDATA[
+<p class="has-medium-font-size">我本来想用WordPress，但是出现了奇怪的问题，我无法进行修复；于是，我更换了<code>solo</code>博客系统，这次感觉好了很多。</p>
+
+
+
+<p class="has-medium-font-size">只不过，我发现并不是真的那么好用，因为有很多我需要的功能是无法直接实现的，所以我最后换了回来，WordPress，即便没有那么美观，但是足够的功能让我更加偏爱。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/07/%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%80%89%e7%94%a8/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
