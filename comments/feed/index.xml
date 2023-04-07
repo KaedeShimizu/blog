@@ -11,11 +11,25 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../index.html</link>
 	<description>Kaede的个人博客</description>
-	<lastBuildDate>Fri, 07 Apr 2023 14:27:43 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 07 Apr 2023 23:51:00 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.2</generator>
-</channel>
+	<item>
+		<title>
+		Kaede对《通过Simply Static将WP转换为静态站点》的评论		</title>
+		<link>./../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html#comment-2</link>
+
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 15:05:11 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=110#comment-2</guid>
+
+					<description><![CDATA[好耶！]]></description>
+			<content:encoded><![CDATA[<p>好耶！</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
 </rss>

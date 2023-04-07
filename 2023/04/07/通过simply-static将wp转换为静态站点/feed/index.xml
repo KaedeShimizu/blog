@@ -11,11 +11,25 @@
 	<atom:link href="./../../%E9%80%9A%E8%BF%87simply-static%E5%B0%86wp%E8%BD%AC%E6%8D%A2%E4%B8%BA%E9%9D%99%E6%80%81%E7%AB%99%E7%82%B9/feed/index.html" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
 	<description>Kaede的个人博客</description>
-	<lastBuildDate>Fri, 07 Apr 2023 14:27:43 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 07 Apr 2023 23:51:00 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.2</generator>
-</channel>
+	<item>
+		<title>
+		评论者：Kaede		</title>
+		<link>./../index.html#comment-2</link>
+
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Fri, 07 Apr 2023 15:05:11 +0000</pubDate>
+		<guid isPermaLink="false">./../../../../../index.html?p=110#comment-2</guid>
+
+					<description><![CDATA[好耶！]]></description>
+			<content:encoded><![CDATA[<p>好耶！</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
 </rss>
