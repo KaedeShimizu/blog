@@ -17,19 +17,5 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.2</generator>
-	<item>
-		<title>
-		评论者：Kaede		</title>
-		<link>./../index.html#comment-2</link>
-
-		<dc:creator><![CDATA[Kaede]]></dc:creator>
-		<pubDate>Fri, 07 Apr 2023 15:05:11 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../../index.html?p=110#comment-2</guid>
-
-					<description><![CDATA[好耶！]]></description>
-			<content:encoded><![CDATA[<p>好耶！</p>
-]]></content:encoded>
-		
-			</item>
-	</channel>
+</channel>
 </rss>
