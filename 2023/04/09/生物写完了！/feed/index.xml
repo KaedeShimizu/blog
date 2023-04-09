@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《生物写完了！》的评论	</title>
+	<atom:link href="./../../%E7%94%9F%E7%89%A9%E5%86%99%E5%AE%8C%E4%BA%86%EF%BC%81/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>雄心壮志是茫茫黑夜中的北斗星</description>
+	<lastBuildDate>Sat, 08 Apr 2023 16:33:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+</channel>
+</rss>

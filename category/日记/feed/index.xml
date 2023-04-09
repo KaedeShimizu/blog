@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>日记 &#8211; Kaedeの小窝</title>
+	<atom:link href="./../../%E6%97%A5%E8%AE%B0/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>雄心壮志是茫茫黑夜中的北斗星</description>
+	<lastBuildDate>Sat, 08 Apr 2023 16:33:19 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2023/04/cropped-cropped-00001-371256660-32x32.png</url>
+	<title>日记 &#8211; Kaedeの小窝</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>生物写完了！</title>
+		<link>./../../../2023/04/09/%e7%94%9f%e7%89%a9%e5%86%99%e5%ae%8c%e4%ba%86%ef%bc%81/index.html</link>
+					<comments>./../../../2023/04/09/%e7%94%9f%e7%89%a9%e5%86%99%e5%ae%8c%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Sat, 08 Apr 2023 16:33:19 +0000</pubDate>
+				<category><![CDATA[日记]]></category>
+		<category><![CDATA[杂谈]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=134</guid>
+
+					<description><![CDATA[整整13页纸的东西！三小时！啊啊啊啊啊啊写完了！！！ 别说这字好不好看，就说这劳动量大不大吧！又是画图又是写东 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="has-medium-font-size">整整13页纸的东西！三小时！啊啊啊啊啊啊写完了！！！</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="576" src="./../../../wp-content/uploads/2023/04/4653889A5AE4137F83C3E9F170AD797B-1024x576.jpg" alt="" class="wp-image-135" srcset="./../../../wp-content/uploads/2023/04/4653889A5AE4137F83C3E9F170AD797B-1024x576.jpg 1024w, ./../../../wp-content/uploads/2023/04/4653889A5AE4137F83C3E9F170AD797B-300x169.jpg 300w, ./../../../wp-content/uploads/2023/04/4653889A5AE4137F83C3E9F170AD797B-768x432.jpg 768w, ./../../../wp-content/uploads/2023/04/4653889A5AE4137F83C3E9F170AD797B-1536x864.jpg 1536w, ./../../../wp-content/uploads/2023/04/4653889A5AE4137F83C3E9F170AD797B.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">正面</figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="576" src="./../../../wp-content/uploads/2023/04/A33C8B32140089B858717FABA91CD22E-1024x576.jpg" alt="" class="wp-image-136" srcset="./../../../wp-content/uploads/2023/04/A33C8B32140089B858717FABA91CD22E-1024x576.jpg 1024w, ./../../../wp-content/uploads/2023/04/A33C8B32140089B858717FABA91CD22E-300x169.jpg 300w, ./../../../wp-content/uploads/2023/04/A33C8B32140089B858717FABA91CD22E-768x432.jpg 768w, ./../../../wp-content/uploads/2023/04/A33C8B32140089B858717FABA91CD22E-1536x864.jpg 1536w, ./../../../wp-content/uploads/2023/04/A33C8B32140089B858717FABA91CD22E.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">反面</figcaption></figure></div>
+
+
+<p class="has-medium-font-size">别说这字好不好看，就说这劳动量大不大吧！又是画图又是写东西。不过写完了的成就感也确实不错√</p>
+
+
+
+<p class="has-medium-font-size">希望下次没有这么多的作业吧，手疼</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/09/%e7%94%9f%e7%89%a9%e5%86%99%e5%ae%8c%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

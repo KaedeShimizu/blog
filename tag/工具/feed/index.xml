@@ -11,7 +11,7 @@
 	<title>工具 &#8211; Kaedeの小窝</title>
 	<atom:link href="./../../%E5%B7%A5%E5%85%B7/feed/index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
-	<description>Kaede的个人博客</description>
+	<description>雄心壮志是茫茫黑夜中的北斗星</description>
 	<lastBuildDate>Fri, 07 Apr 2023 12:46:18 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
@@ -38,7 +38,7 @@
 		<category><![CDATA[工具]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=28</guid>
 
-					<description><![CDATA[使用方法 只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中 在这里只提供一个链接&#038;n</div><div class="blog-btn"><a href="./../../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[使用方法 只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中 在这里只提供一个链接&#038;n [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <h2 class="wp-block-heading" id="toc_h2_1">使用方法</h2>
 
@@ -90,7 +90,7 @@
 		<category><![CDATA[工具]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=24</guid>
 
-					<description><![CDATA[关于&#38;使用方法 随手写的一个小程序，运行在Python 3.10.9，没有什么依赖，只需要安装一个gr</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[关于&#38;使用方法 随手写的一个小程序，运行在Python 3.10.9，没有什么依赖，只需要安装一个gr [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <h2 class="wp-block-heading" id="toc_h2_1">关于&amp;使用方法</h2>
 

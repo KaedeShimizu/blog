@@ -11,7 +11,7 @@
 	<title>nginx &#8211; Kaedeの小窝</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
-	<description>Kaede的个人博客</description>
+	<description>雄心壮志是茫茫黑夜中的北斗星</description>
 	<lastBuildDate>Fri, 07 Apr 2023 13:38:21 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
@@ -40,7 +40,7 @@
 		<category><![CDATA[技术]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=71</guid>
 
-					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.htaccess。</p>
 

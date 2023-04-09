@@ -11,7 +11,7 @@
 	<title>WordPress &#8211; Kaedeの小窝</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
-	<description>Kaede的个人博客</description>
+	<description>雄心壮志是茫茫黑夜中的北斗星</description>
 	<lastBuildDate>Fri, 07 Apr 2023 23:51:00 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
@@ -39,7 +39,7 @@
 		<category><![CDATA[技术]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=110</guid>
 
-					<description><![CDATA[主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的</div><div class="blog-btn"><a href="./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p class="has-medium-font-size">主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的使用方法。</p>
 
@@ -91,7 +91,7 @@
 		<category><![CDATA[技术]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=71</guid>
 
-					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.htaccess。</p>
 

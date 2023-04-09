@@ -11,7 +11,7 @@
 	<title>未分类 &#8211; Kaedeの小窝</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
-	<description>Kaede的个人博客</description>
+	<description>雄心壮志是茫茫黑夜中的北斗星</description>
 	<lastBuildDate>Fri, 07 Apr 2023 23:51:00 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
@@ -39,7 +39,7 @@
 		<category><![CDATA[技术]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=110</guid>
 
-					<description><![CDATA[主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的</div><div class="blog-btn"><a href="./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p class="has-medium-font-size">主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的使用方法。</p>
 
@@ -91,7 +91,7 @@
 		<category><![CDATA[技术]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=71</guid>
 
-					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.hta [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.htaccess。</p>
 
@@ -135,7 +135,7 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;</code></pre>
 		<category><![CDATA[工具]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=28</guid>
 
-					<description><![CDATA[使用方法 只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中 在这里只提供一个链接&#038;n</div><div class="blog-btn"><a href="./../../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[使用方法 只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中 在这里只提供一个链接&#038;n [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <h2 class="wp-block-heading" id="toc_h2_1">使用方法</h2>
 
@@ -187,7 +187,7 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;</code></pre>
 		<category><![CDATA[工具]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=24</guid>
 
-					<description><![CDATA[关于&#38;使用方法 随手写的一个小程序，运行在Python 3.10.9，没有什么依赖，只需要安装一个gr</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[关于&#38;使用方法 随手写的一个小程序，运行在Python 3.10.9，没有什么依赖，只需要安装一个gr [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <h2 class="wp-block-heading" id="toc_h2_1">关于&amp;使用方法</h2>
 
@@ -231,7 +231,7 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;</code></pre>
 		<category><![CDATA[技术]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=22</guid>
 
-					<description><![CDATA[我本来想用WordPress，但是出现了奇怪的问题，我无法进行修复；于是，我更换了solo博客系统，这次感觉好</div><div class="blog-btn"><a href="./../../../2023/04/07/%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%80%89%e7%94%a8/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[我本来想用WordPress，但是出现了奇怪的问题，我无法进行修复；于是，我更换了solo博客系统，这次感觉好 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p class="has-medium-font-size">我本来想用WordPress，但是出现了奇怪的问题，我无法进行修复；于是，我更换了<code>solo</code>博客系统，这次感觉好了很多。</p>
 
@@ -255,7 +255,7 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;</code></pre>
 				<category><![CDATA[未分类]]></category>
 		<guid isPermaLink="false">./../../../index.html?p=9</guid>
 
-					<description><![CDATA[作为一个程序员~Hello World当然是一切的开始啦 那么，我的第一个博客，也要有Hello World~</div><div class="blog-btn"><a href="./../../../2023/04/07/%e8%87%aa%e5%8a%a8%e8%8d%89%e7%a8%bf/index.html" class="home-blog-btn">阅读更多</a>]]></description>
+					<description><![CDATA[作为一个程序员~Hello World当然是一切的开始啦 那么，我的第一个博客，也要有Hello World~ [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p class="has-medium-font-size">作为一个程序员~Hello World当然是一切的开始啦</p>
 
