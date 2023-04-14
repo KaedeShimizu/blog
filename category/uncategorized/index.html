@@ -70,10 +70,7 @@ img.emoji {
 			dateFormat: "YMD",
 							zoomify: false,
 						pangu: "false",
-							lazyload: {
-					threshold: 800,
-					effect: "fadeIn"
-				},
+							lazyload: false,
 						fold_long_comments: false,
 			fold_long_shuoshuo: false,
 			disable_pjax: false,
@@ -400,7 +397,7 @@ img.emoji {
 														<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a style="cursor: default;">
-										<span class="site-state-item-count">22</span>
+										<span class="site-state-item-count">24</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -433,7 +430,7 @@ img.emoji {
 				</button>
 			</div>
 			<div class="modal-body">
-				<a href="./../%e3%80%8a%e4%b8%ad%e5%9b%bd2185%e3%80%8b/index.html" class="badge badge-secondary tag">《中国2185》 <span class="tag-num">15</span></a><a href="./../%e6%97%a5%e8%ae%b0/index.html" class="badge badge-secondary tag">日记 <span class="tag-num">1</span></a><a href="./index.html" class="badge badge-secondary tag">未分类 <span class="tag-num">6</span></a><a href="./../%e7%bc%96%e7%a8%8b/index.html" class="badge badge-secondary tag">编程 <span class="tag-num">0</span></a>			</div>
+				<a href="./../%e3%80%8a%e4%b8%ad%e5%9b%bd2185%e3%80%8b/index.html" class="badge badge-secondary tag">《中国2185》 <span class="tag-num">15</span></a><a href="./../%e6%97%a5%e8%ae%b0/index.html" class="badge badge-secondary tag">日记 <span class="tag-num">2</span></a><a href="./index.html" class="badge badge-secondary tag">未分类 <span class="tag-num">6</span></a><a href="./../%e7%bc%96%e7%a8%8b/index.html" class="badge badge-secondary tag">编程 <span class="tag-num">1</span></a>			</div>
 		</div>
 	</div>
 </div>
@@ -447,28 +444,23 @@ img.emoji {
 				</button>
 			</div>
 			<div class="modal-body">
-				<a href="./../../tag/nginx/index.html" class="badge badge-secondary tag">nginx <span class="tag-num">1</span></a><a href="./../../tag/python/index.html" class="badge badge-secondary tag">Python <span class="tag-num">0</span></a><a href="./../../tag/wordpress/index.html" class="badge badge-secondary tag">WordPress <span class="tag-num">2</span></a><a href="./../../tag/%e5%b0%8f%e8%af%b4/index.html" class="badge badge-secondary tag">小说 <span class="tag-num">15</span></a><a href="./../../tag/%e5%b7%a5%e5%85%b7/index.html" class="badge badge-secondary tag">工具 <span class="tag-num">2</span></a><a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" class="badge badge-secondary tag">技术 <span class="tag-num">3</span></a><a href="./../../tag/%e6%95%99%e8%82%b2/index.html" class="badge badge-secondary tag">教育 <span class="tag-num">0</span></a><a href="./../../tag/%e6%97%a5%e8%ae%b0/index.html" class="badge badge-secondary tag">日记 <span class="tag-num">1</span></a><a href="./../../tag/%e6%9d%82%e8%b0%88/index.html" class="badge badge-secondary tag">杂谈 <span class="tag-num">1</span></a>			</div>
+				<a href="./../../tag/nginx/index.html" class="badge badge-secondary tag">nginx <span class="tag-num">1</span></a><a href="./../../tag/python/index.html" class="badge badge-secondary tag">Python <span class="tag-num">0</span></a><a href="./../../tag/wordpress/index.html" class="badge badge-secondary tag">WordPress <span class="tag-num">2</span></a><a href="./../../tag/%e5%b0%8f%e8%af%b4/index.html" class="badge badge-secondary tag">小说 <span class="tag-num">15</span></a><a href="./../../tag/%e5%b7%a5%e5%85%b7/index.html" class="badge badge-secondary tag">工具 <span class="tag-num">2</span></a><a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" class="badge badge-secondary tag">技术 <span class="tag-num">5</span></a><a href="./../../tag/%e6%95%99%e8%82%b2/index.html" class="badge badge-secondary tag">教育 <span class="tag-num">0</span></a><a href="./../../tag/%e6%97%a5%e8%ae%b0/index.html" class="badge badge-secondary tag">日记 <span class="tag-num">1</span></a><a href="./../../tag/%e6%9d%82%e8%b0%88/index.html" class="badge badge-secondary tag">杂谈 <span class="tag-num">1</span></a>			</div>
 		</div>
 	</div>
 </div>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main article-list" role="main">
-			<article class="post card bg-white shadow-sm border-0  post-preview-layout-2" id="post-110">
-	<header class="post-header ">
-			</header>
-
-	<div class="post-content-container">
-		<a class="post-title" href="./../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html">通过Simply Static将WP转换为静态站点</a>
-							<div class="post-content">
-				主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的使用方法。 首先，保证你的PHP版本能够安装这个插件，然后直接搜索安装即可。 具体步骤 后台—设置—固定链接，选择自定义结构，可以直接使用上面自带的，或者自定义结构如下 然后，启动插件，进入插件的Settings进行相关的设置，使用相对路径&hellip;			</div>
-				<div class="post-meta">
+			<article class="post card bg-white shadow-sm border-0 post-preview" id="post-110">
+	<header class="post-header text-center">
+				<a class="post-title" href="./../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html">通过Simply Static将WP转换为静态站点</a>
+		<div class="post-meta">
 			<div class="post-meta-detail post-meta-detail-time">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 					<time title="发布于 2023-4-07 22:27:43 | 编辑于 2023-4-08 7:51:00">2023-4-07 22:27
 					</time>
 				</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-views">
-					<i class="fa fa-eye" aria-hidden="true"></i> 6</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
+					<i class="fa fa-eye" aria-hidden="true"></i> 12</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
 					<i class="fa fa-comments-o" aria-hidden="true"></i> 0</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
 				<i class="fa fa-bookmark-o" aria-hidden="true"></i> <a href="./index.html" target="_blank" class="post-meta-detail-catagory-link">未分类</a>
 </div>						<div class="post-meta-detail post-meta-detail-words">
@@ -480,25 +472,24 @@ img.emoji {
 			1 分钟内
 		</div>
 			</div>
-					<div class="post-tags">
-				<i class="fa fa-tags" aria-hidden="true"></i>
-				<a href="./../../tag/wordpress/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">WordPress</a><a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">技术</a>			</div>
-			</div>
-</article><article class="post card bg-white shadow-sm border-0  post-preview-layout-2" id="post-71">
-	<header class="post-header ">
 			</header>
 
-	<div class="post-content-container">
-		<a class="post-title" href="./../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html">解决Nginx下WordPress Nginx 404的问题</a>
-							<div class="post-content">
-				通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.htaccess。 这里以PHPStudy举例子，直接在网站-管理-伪静态输入下面的内容即可 location / { if (-f $request_filename/index.html){ rewrite (.*) $1/index.htm&hellip;			</div>
-				<div class="post-meta">
+				<div class="post-content">
+			主要是为了使用Github的pages服务，不想要手动购买服务器，于是我想到了这个东西，在这里我介绍一下基本的使用方法。 首先，保证你的PHP版本能够安装这个插件，然后直接搜索安装即可。 具体步骤 后台—设置—固定链接，选择自定义结构，可以直接使用上面自带的，或者自定义结构如下 然后，启动插件，进入插件的Settings进行相关的设置，使用相对路径&hellip;		</div>
+	
+			<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a href="./../../tag/wordpress/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">WordPress</a><a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">技术</a>		</div>
+	</article><article class="post card bg-white shadow-sm border-0 post-preview" id="post-71">
+	<header class="post-header text-center">
+				<a class="post-title" href="./../../2023/04/07/%e8%a7%a3%e5%86%b3nginx%e4%b8%8bwordpress-nginx-404%e7%9a%84%e9%97%ae%e9%a2%98/index.html">解决Nginx下WordPress Nginx 404的问题</a>
+		<div class="post-meta">
 			<div class="post-meta-detail post-meta-detail-time">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 					<time title="发布于 2023-4-07 21:38:21 | 编辑于 2023-4-07 21:38:21">2023-4-07 21:38
 					</time>
 				</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-views">
-					<i class="fa fa-eye" aria-hidden="true"></i> 6</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
+					<i class="fa fa-eye" aria-hidden="true"></i> 12</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
 					<i class="fa fa-comments-o" aria-hidden="true"></i> 0</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
 				<i class="fa fa-bookmark-o" aria-hidden="true"></i> <a href="./index.html" target="_blank" class="post-meta-detail-catagory-link">未分类</a>
 </div>						<div class="post-meta-detail post-meta-detail-words">
@@ -510,25 +501,24 @@ img.emoji {
 			1 分钟内
 		</div>
 			</div>
-					<div class="post-tags">
-				<i class="fa fa-tags" aria-hidden="true"></i>
-				<a href="./../../tag/nginx/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">nginx</a><a href="./../../tag/wordpress/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">WordPress</a><a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">技术</a>			</div>
-			</div>
-</article><article class="post card bg-white shadow-sm border-0  post-preview-layout-2" id="post-28">
-	<header class="post-header ">
 			</header>
 
-	<div class="post-content-container">
-		<a class="post-title" href="./../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/index.html">翻译器-中英互译</a>
-							<div class="post-content">
-				使用方法 只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中 在这里只提供一个链接&nbsp;中译英&nbsp;以及&nbsp;英译中&nbsp;的模型。 然后输入streamlit run webui.py或者python webui_gradio.py就可以啦~放心使用，本程序不连接互联网，没有任何直接效益，完全免费。 &hellip;			</div>
-				<div class="post-meta">
+				<div class="post-content">
+			通过伪静态解决问题，wordpress官方的伪静态是通过.htaccess实现的，但nginx并不支持.htaccess。 这里以PHPStudy举例子，直接在网站-管理-伪静态输入下面的内容即可 location / { if (-f $request_filename/index.html){ rewrite (.*) $1/index.htm&hellip;		</div>
+	
+			<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a href="./../../tag/nginx/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">nginx</a><a href="./../../tag/wordpress/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">WordPress</a><a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">技术</a>		</div>
+	</article><article class="post card bg-white shadow-sm border-0 post-preview" id="post-28">
+	<header class="post-header text-center">
+				<a class="post-title" href="./../../2023/04/07/%e7%bf%bb%e8%af%91%e5%99%a8-%e4%b8%ad%e8%8b%b1%e4%ba%92%e8%af%91/index.html">翻译器-中英互译</a>
+		<div class="post-meta">
 			<div class="post-meta-detail post-meta-detail-time">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 					<time title="发布于 2023-4-07 20:19:49 | 编辑于 2023-4-07 20:46:04">2023-4-07 20:19
 					</time>
 				</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-views">
-					<i class="fa fa-eye" aria-hidden="true"></i> 5</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
+					<i class="fa fa-eye" aria-hidden="true"></i> 11</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
 					<i class="fa fa-comments-o" aria-hidden="true"></i> 0</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
 				<i class="fa fa-bookmark-o" aria-hidden="true"></i> <a href="./index.html" target="_blank" class="post-meta-detail-catagory-link">未分类</a>
 </div>						<div class="post-meta-detail post-meta-detail-words">
@@ -540,25 +530,24 @@ img.emoji {
 			1 分钟内
 		</div>
 			</div>
-					<div class="post-tags">
-				<i class="fa fa-tags" aria-hidden="true"></i>
-				<a href="./../../tag/%e5%b7%a5%e5%85%b7/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">工具</a>			</div>
-			</div>
-</article><article class="post card bg-white shadow-sm border-0  post-preview-layout-2" id="post-24">
-	<header class="post-header ">
 			</header>
 
-	<div class="post-content-container">
-		<a class="post-title" href="./../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/index.html">转码解码-加密解密器</a>
-							<div class="post-content">
-				关于&amp;使用方法 随手写的一个小程序，运行在Python 3.10.9，没有什么依赖，只需要安装一个gradio用来构建页面即可：pip install gradio 然后，直接在当前文件夹打开终端，输入python webui_gradio.py即可，会自动在浏览器中打开一个网页，运行情况如下图： 文件下载 直接提供啦，不提供什么外部链接，&hellip;			</div>
-				<div class="post-meta">
+				<div class="post-content">
+			使用方法 只需要下载下来，解压缩，进入目录，下载需要的模型文件放在model文件夹中 在这里只提供一个链接&nbsp;中译英&nbsp;以及&nbsp;英译中&nbsp;的模型。 然后输入streamlit run webui.py或者python webui_gradio.py就可以啦~放心使用，本程序不连接互联网，没有任何直接效益，完全免费。 &hellip;		</div>
+	
+			<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a href="./../../tag/%e5%b7%a5%e5%85%b7/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">工具</a>		</div>
+	</article><article class="post card bg-white shadow-sm border-0 post-preview" id="post-24">
+	<header class="post-header text-center">
+				<a class="post-title" href="./../../2023/04/07/%e8%bd%ac%e7%a0%81%e8%a7%a3%e7%a0%81-%e5%8a%a0%e5%af%86%e8%a7%a3%e5%af%86%e5%99%a8/index.html">转码解码-加密解密器</a>
+		<div class="post-meta">
 			<div class="post-meta-detail post-meta-detail-time">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 					<time title="发布于 2023-4-07 20:16:33 | 编辑于 2023-4-07 20:46:18">2023-4-07 20:16
 					</time>
 				</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-views">
-					<i class="fa fa-eye" aria-hidden="true"></i> 5</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
+					<i class="fa fa-eye" aria-hidden="true"></i> 11</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
 					<i class="fa fa-comments-o" aria-hidden="true"></i> 0</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
 				<i class="fa fa-bookmark-o" aria-hidden="true"></i> <a href="./index.html" target="_blank" class="post-meta-detail-catagory-link">未分类</a>
 </div>						<div class="post-meta-detail post-meta-detail-words">
@@ -570,25 +559,24 @@ img.emoji {
 			1 分钟内
 		</div>
 			</div>
-					<div class="post-tags">
-				<i class="fa fa-tags" aria-hidden="true"></i>
-				<a href="./../../tag/%e5%b7%a5%e5%85%b7/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">工具</a>			</div>
-			</div>
-</article><article class="post card bg-white shadow-sm border-0  post-preview-layout-2" id="post-22">
-	<header class="post-header ">
 			</header>
 
-	<div class="post-content-container">
-		<a class="post-title" href="./../../2023/04/07/%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%80%89%e7%94%a8/index.html">关于博客系统的选用</a>
-							<div class="post-content">
-				我本来想用WordPress，但是出现了奇怪的问题，我无法进行修复；于是，我更换了solo博客系统，这次感觉好了很多。 只不过，我发现并不是真的那么好用，因为有很多我需要的功能是无法直接实现的，所以我最后换了回来，WordPress，即便没有那么美观，但是足够的功能让我更加偏爱。			</div>
-				<div class="post-meta">
+				<div class="post-content">
+			关于&amp;使用方法 随手写的一个小程序，运行在Python 3.10.9，没有什么依赖，只需要安装一个gradio用来构建页面即可：pip install gradio 然后，直接在当前文件夹打开终端，输入python webui_gradio.py即可，会自动在浏览器中打开一个网页，运行情况如下图： 文件下载 直接提供啦，不提供什么外部链接，&hellip;		</div>
+	
+			<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a href="./../../tag/%e5%b7%a5%e5%85%b7/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">工具</a>		</div>
+	</article><article class="post card bg-white shadow-sm border-0 post-preview" id="post-22">
+	<header class="post-header text-center">
+				<a class="post-title" href="./../../2023/04/07/%e5%85%b3%e4%ba%8e%e5%8d%9a%e5%ae%a2%e7%b3%bb%e7%bb%9f%e7%9a%84%e9%80%89%e7%94%a8/index.html">关于博客系统的选用</a>
+		<div class="post-meta">
 			<div class="post-meta-detail post-meta-detail-time">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 					<time title="发布于 2023-4-07 20:13:14 | 编辑于 2023-4-07 20:13:14">2023-4-07 20:13
 					</time>
 				</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-views">
-					<i class="fa fa-eye" aria-hidden="true"></i> 5</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
+					<i class="fa fa-eye" aria-hidden="true"></i> 11</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
 					<i class="fa fa-comments-o" aria-hidden="true"></i> 0</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
 				<i class="fa fa-bookmark-o" aria-hidden="true"></i> <a href="./index.html" target="_blank" class="post-meta-detail-catagory-link">未分类</a>
 </div>						<div class="post-meta-detail post-meta-detail-words">
@@ -600,25 +588,24 @@ img.emoji {
 			1 分钟内
 		</div>
 			</div>
-					<div class="post-tags">
-				<i class="fa fa-tags" aria-hidden="true"></i>
-				<a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">技术</a>			</div>
-			</div>
-</article><article class="post card bg-white shadow-sm border-0  post-preview-layout-2" id="post-9">
-	<header class="post-header ">
 			</header>
 
-	<div class="post-content-container">
-		<a class="post-title" href="./../../2023/04/07/%e8%87%aa%e5%8a%a8%e8%8d%89%e7%a8%bf/index.html">Hello World</a>
-							<div class="post-content">
-				作为一个程序员~Hello World当然是一切的开始啦 那么，我的第一个博客，也要有Hello World~ 记录生活，从现在开始！			</div>
-				<div class="post-meta">
+				<div class="post-content">
+			我本来想用WordPress，但是出现了奇怪的问题，我无法进行修复；于是，我更换了solo博客系统，这次感觉好了很多。 只不过，我发现并不是真的那么好用，因为有很多我需要的功能是无法直接实现的，所以我最后换了回来，WordPress，即便没有那么美观，但是足够的功能让我更加偏爱。		</div>
+	
+			<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a href="./../../tag/%e6%8a%80%e6%9c%af/index.html" target="_blank" class="tag badge badge-secondary post-meta-detail-tag">技术</a>		</div>
+	</article><article class="post card bg-white shadow-sm border-0 post-preview" id="post-9">
+	<header class="post-header text-center">
+				<a class="post-title" href="./../../2023/04/07/%e8%87%aa%e5%8a%a8%e8%8d%89%e7%a8%bf/index.html">Hello World</a>
+		<div class="post-meta">
 			<div class="post-meta-detail post-meta-detail-time">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 					<time title="发布于 2023-4-07 19:28:32 | 编辑于 2023-4-07 20:46:35">2023-4-07 19:28
 					</time>
 				</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-views">
-					<i class="fa fa-eye" aria-hidden="true"></i> 5</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
+					<i class="fa fa-eye" aria-hidden="true"></i> 11</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-comments">
 					<i class="fa fa-comments-o" aria-hidden="true"></i> 0</div> <div class="post-meta-devide">|</div> <div class="post-meta-detail post-meta-detail-categories">
 				<i class="fa fa-bookmark-o" aria-hidden="true"></i> <a href="./index.html" target="_blank" class="post-meta-detail-catagory-link">未分类</a>
 </div>						<div class="post-meta-detail post-meta-detail-words">
@@ -630,10 +617,15 @@ img.emoji {
 			几秒读完
 		</div>
 			</div>
-			</div>
-</article>				
+			</header>
+
+				<div class="post-content">
+			作为一个程序员~Hello World当然是一切的开始啦 那么，我的第一个博客，也要有Hello World~ 记录生活，从现在开始！		</div>
+	
+	</article>				
 					<footer id="footer" class="site-footer card shadow-sm border-0">
-												<div>Theme <a href="https://github.com/solstice23/argon-theme" target="_blank"><strong>Argon</strong></a> By solstice23</div>
+												<div>Theme <a href="https://github.com/solstice23/argon-theme" target="_blank"><strong>Argon</strong></a>
+</div>
 					</footer>
 				</main>
 			</div>

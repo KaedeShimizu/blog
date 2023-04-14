@@ -12,7 +12,7 @@
 	<atom:link href="./../../%E6%8A%80%E6%9C%AF/feed/index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
 	<description>雄心壮志是茫茫黑夜中的北斗星</description>
-	<lastBuildDate>Fri, 07 Apr 2023 23:51:00 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 12 Apr 2023 14:06:52 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,162 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>AI改变世界！</title>
+		<link>./../../../2023/04/12/ai%e6%94%b9%e5%8f%98%e4%b8%96%e7%95%8c%ef%bc%81/index.html</link>
+					<comments>./../../../2023/04/12/ai%e6%94%b9%e5%8f%98%e4%b8%96%e7%95%8c%ef%bc%81/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Wed, 12 Apr 2023 14:05:01 +0000</pubDate>
+				<category><![CDATA[日记]]></category>
+		<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=175</guid>
+
+					<description><![CDATA[好久之前申请了这个“文心一言”的内测，今天看到短信，可算是通过内测了！ 目前使用下来，虽然会出现一些错误，不过 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>好久之前申请了这个“文心一言”的内测，今天看到短信，可算是通过内测了！</p>
+
+
+
+<p>目前使用下来，虽然会出现一些错误，不过这些错误貌似ChatGPT也会出现…现在只能寄希望于ChatGPT-5啦，我看好文心一言，毕竟有了竞争，才有更加优良的产品供用户体验使用。</p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="aligncenter size-large is-resized"><img decoding="async" src="./../../../wp-content/uploads/2023/04/image-13-1024x459.png" alt="" class="wp-image-176" width="816" height="365" srcset="./../../../wp-content/uploads/2023/04/image-13-1024x459.png 1024w, ./../../../wp-content/uploads/2023/04/image-13-300x134.png 300w, ./../../../wp-content/uploads/2023/04/image-13-768x344.png 768w, ./../../../wp-content/uploads/2023/04/image-13.png 1366w" sizes="(max-width: 816px) 100vw, 816px" /></figure></div>
+
+
+<p>最后，希望技术能够将人类带上新的高度~AI定会改变世界！</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/12/ai%e6%94%b9%e5%8f%98%e4%b8%96%e7%95%8c%ef%bc%81/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>将本地静态网站上传至Github并允许公开访问</title>
+		<link>./../../../2023/04/09/%e5%b0%86%e6%9c%ac%e5%9c%b0%e9%9d%99%e6%80%81%e7%bd%91%e7%ab%99%e4%b8%8a%e4%bc%a0%e8%87%b3github%e5%b9%b6%e5%85%81%e8%ae%b8%e5%85%ac%e5%bc%80%e8%ae%bf%e9%97%ae/index.html</link>
+					<comments>./../../../2023/04/09/%e5%b0%86%e6%9c%ac%e5%9c%b0%e9%9d%99%e6%80%81%e7%bd%91%e7%ab%99%e4%b8%8a%e4%bc%a0%e8%87%b3github%e5%b9%b6%e5%85%81%e8%ae%b8%e5%85%ac%e5%bc%80%e8%ae%bf%e9%97%ae/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[Kaede]]></dc:creator>
+		<pubDate>Sun, 09 Apr 2023 09:50:14 +0000</pubDate>
+				<category><![CDATA[编程]]></category>
+		<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=162</guid>
+
+					<description><![CDATA[如果现在已经准备好了一个本地的网站，比如个人博客/个人网站等页面，那么就可以使用Github Pages这个免 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>如果现在已经准备好了一个本地的网站，比如个人博客/个人网站等页面，那么就可以使用Github Pages这个免费的网页托管工具，让别人可以轻松访问自己的网站，这里对具体的步骤进行记录，这里以本站进行举例说明。</p>
+
+
+
+<h2 class="wp-block-heading">准备一个本地网站</h2>
+
+
+
+<p>这是必要的一步，准备好的网站应该放在一个文件夹内，文件夹中不需要网站之外的其他内容。</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="667" height="437" src="./../../../wp-content/uploads/2023/04/image-7.png" alt="" class="wp-image-164" srcset="./../../../wp-content/uploads/2023/04/image-7.png 667w, ./../../../wp-content/uploads/2023/04/image-7-300x197.png 300w" sizes="(max-width: 667px) 100vw, 667px" /></figure></div>
+
+
+<h2 class="wp-block-heading">下载需要用到的软件</h2>
+
+
+
+<p>因为你需要上传到Github，这里下载电脑的Git，方便后续的使用。</p>
+
+
+
+<h2 class="wp-block-heading">拥有一个Github Page仓库</h2>
+
+
+
+<p>如下，你需要在自己的Github先创建一个这样格式的仓库：</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="452" height="48" src="./../../../wp-content/uploads/2023/04/image-8.png" alt="" class="wp-image-165" srcset="./../../../wp-content/uploads/2023/04/image-8.png 452w, ./../../../wp-content/uploads/2023/04/image-8-300x32.png 300w" sizes="(max-width: 452px) 100vw, 452px" /><figcaption class="wp-element-caption">用户名.github.io</figcaption></figure></div>
+
+
+<p>随后进入Settings，开启Page服务，然后按照自己的需求进行设置，最后如下图：（如果自己有域名，可以在下面设置，但是需要更多的篇幅进行讲解，这里不多说了）</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="993" height="584" src="./../../../wp-content/uploads/2023/04/image-9.png" alt="" class="wp-image-166" srcset="./../../../wp-content/uploads/2023/04/image-9.png 993w, ./../../../wp-content/uploads/2023/04/image-9-300x176.png 300w, ./../../../wp-content/uploads/2023/04/image-9-768x452.png 768w" sizes="(max-width: 993px) 100vw, 993px" /></figure></div>
+
+
+<h2 class="wp-block-heading">上传网站</h2>
+
+
+
+<p>在本地静态网站的文件夹内，右键菜单，选择“Git Bash Here”，然后按照下面的步骤输入命令</p>
+
+
+
+<pre class="wp-block-code"><code># 初始化
+git init
+
+# 设定用户的相关信息
+git config --global user.name "XXX"
+git config --global user.email "XXX@email.com"
+
+# 创建SSH密钥
+ssh-keygen -t rsa -C "XXX@email.com"
+
+# 查看密钥，这里直接复制输出的密钥即可
+# 这里你需要再次打开Github，在用户界面设置SSH密钥，这里就不演示了
+cat  ~/.ssh/id_rsa.pub
+
+# 添加文件
+git add .
+
+# 设置本次提交文件的备注
+git commit -m '本次提交的备注'
+
+# 强制提交
+git push -u origin main -f</code></pre>
+
+
+
+<p>完成以后，你应该就看到提交成功了√</p>
+
+
+
+<h2 class="wp-block-heading">Github进行一次deploy</h2>
+
+
+
+<p>打开仓库的Action Tab栏，选择New，创建一个新的任务</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="564" height="311" src="./../../../wp-content/uploads/2023/04/image-10.png" alt="" class="wp-image-167" srcset="./../../../wp-content/uploads/2023/04/image-10.png 564w, ./../../../wp-content/uploads/2023/04/image-10-300x165.png 300w" sizes="(max-width: 564px) 100vw, 564px" /></figure></div>
+
+
+<p>往下翻找，你会找到一个这个东西，直接点击，然后点击创建，运行即可。</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="294" height="235" src="./../../../wp-content/uploads/2023/04/image-11.png" alt="" class="wp-image-168"/></figure></div>
+
+
+<p>然后，回到Actions栏，你会看到这个东西</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="435" height="62" src="./../../../wp-content/uploads/2023/04/image-12.png" alt="" class="wp-image-169" srcset="./../../../wp-content/uploads/2023/04/image-12.png 435w, ./../../../wp-content/uploads/2023/04/image-12-300x43.png 300w" sizes="(max-width: 435px) 100vw, 435px" /></figure></div>
+
+
+<p>这个时候，打开xxx.github.io或者你自己的网站，就可以正常进行访问了√</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../2023/04/09/%e5%b0%86%e6%9c%ac%e5%9c%b0%e9%9d%99%e6%80%81%e7%bd%91%e7%ab%99%e4%b8%8a%e4%bc%a0%e8%87%b3github%e5%b9%b6%e5%85%81%e8%ae%b8%e5%85%ac%e5%bc%80%e8%ae%bf%e9%97%ae/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>通过Simply Static将WP转换为静态站点</title>
 		<link>./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html</link>
 					<comments>./../../../2023/04/07/%e9%80%9a%e8%bf%87simply-static%e5%b0%86wp%e8%bd%ac%e6%8d%a2%e4%b8%ba%e9%9d%99%e6%80%81%e7%ab%99%e7%82%b9/index.html#respond</comments>
