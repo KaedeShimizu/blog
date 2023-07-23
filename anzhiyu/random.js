@@ -1,1 +1,0 @@
-var posts=["2023/04/15/hello-world/","2023/04/15/解决Nginx下WordPress-Nginx-404的问题/","2023/04/15/Hexo博客系统的使用/","2023/04/15/Github-Page创建静态站点/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
