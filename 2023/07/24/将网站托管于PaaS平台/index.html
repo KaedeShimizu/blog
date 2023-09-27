@@ -1,0 +1,789 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Kaede">
+  <meta name="keywords" content="Kaede, Blog, 博客">
+  
+    <meta name="description" content="什么是PaaS？平台即服务（PaaS）是一种云计算形式，它提供了一个平台，允许消费者通过广域网（WAN）或Internet开发和部署应用程序和服务。消费者不管理或维护底层平台软件，中间件和云基础架构。 因为把东西运行在自己的服务器上可能会因为服务器到期、被攻击或者自己不小心折腾坏环境等原因，导致自己的网站下线。为了追求的最快的速度与稳定性，使用PaaS平台就可以满足需求了~ 好用的PaaS平台We">
+<meta property="og:type" content="article">
+<meta property="og:title" content="将网站托管于PaaS平台">
+<meta property="og:url" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/index.html">
+<meta property="og:site_name" content="Kaede Lab">
+<meta property="og:description" content="什么是PaaS？平台即服务（PaaS）是一种云计算形式，它提供了一个平台，允许消费者通过广域网（WAN）或Internet开发和部署应用程序和服务。消费者不管理或维护底层平台软件，中间件和云基础架构。 因为把东西运行在自己的服务器上可能会因为服务器到期、被攻击或者自己不小心折腾坏环境等原因，导致自己的网站下线。为了追求的最快的速度与稳定性，使用PaaS平台就可以满足需求了~ 好用的PaaS平台We">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/1.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/2.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/3.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/4.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/5.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/6.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/7.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/8.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/9.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/10.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/11.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/12.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/13.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/14.png">
+<meta property="og:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/15.png">
+<meta property="article:published_time" content="2023-07-24T15:05:12.000Z">
+<meta property="article:modified_time" content="2023-08-05T07:06:23.144Z">
+<meta property="article:author" content="Kaede">
+<meta property="article:tag" content="网站">
+<meta property="article:tag" content="PaaS">
+<meta property="article:tag" content="Web">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kaedelab.pages.dev/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/1.png">
+  
+  
+  
+  <title>将网站托管于PaaS平台 - Kaede Lab</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"kaedelab.pages.dev","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Kaede Lab</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="将网站托管于PaaS平台"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-07-24 23:05" pubdate>
+          2023年7月24日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          26 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">将网站托管于PaaS平台</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="什么是PaaS？"><a href="#什么是PaaS？" class="headerlink" title="什么是PaaS？"></a>什么是PaaS？</h1><p>平台即服务（PaaS）是一种云计算形式，它提供了一个平台，允许消费者通过广域网（WAN）或Internet开发和部署应用程序和服务。消费者不管理或维护底层平台软件，中间件和云基础架构。</p>
+<p>因为把东西运行在自己的服务器上可能会因为服务器到期、被攻击或者自己不小心折腾坏环境等原因，导致自己的网站下线。为了追求的最快的速度与稳定性，使用PaaS平台就可以满足需求了~</p>
+<h1 id="好用的PaaS平台"><a href="#好用的PaaS平台" class="headerlink" title="好用的PaaS平台"></a>好用的PaaS平台</h1><h2 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://fly.io/">Fly.io</a></li>
+<li><a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.koyeb.com/">Koyeb</a></li>
+<li><a target="_blank" rel="noopener" href="https://railway.app/">Railway</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.netlify.com/">Netlify</a></li>
+<li><a target="_blank" rel="noopener" href="https://render.com/">Render</a></li>
+<li><a target="_blank" rel="noopener" href="https://deno.com/deploy">Deno</a></li>
+<li><a target="_blank" rel="noopener" href="https://replit.com/">Replit</a></li>
+<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/product/sls">腾讯云SLS</a></li>
+<li><a target="_blank" rel="noopener" href="https://workers.cloudflare.com/">CloudFlare</a></li>
+</ul>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://upstash.com/">UpStash</a></li>
+<li><a target="_blank" rel="noopener" href="https://planetscale.com/">PlanetScale</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.mongodb.com/atlas/database">Mongodb</a></li>
+<li><a target="_blank" rel="noopener" href="https://supabase.com/">Supabase</a></li>
+<li><a target="_blank" rel="noopener" href="https://neon.tech/">Neon</a></li>
+</ul>
+<h1 id="服务-具体使用方法"><a href="#服务-具体使用方法" class="headerlink" title="服务&amp;具体使用方法"></a>服务&amp;具体使用方法</h1><p>在这里我会按照顺序介绍上面的各种平台以及具体使用的方法或者案例</p>
+<h2 id="Fly-io"><a href="#Fly-io" class="headerlink" title="Fly.io"></a>Fly.io</h2><blockquote>
+<p>首先说明，使用这个玩意现在是必须要有信用卡的，不然用不了</p>
+</blockquote>
+<p>fly.io 是一个容器化的部署平台，只需要一个<code>Dockerfile</code>文件就能部署代码到fly.io的服务器上，同时还自动生成域名。</p>
+<p>下面直接搭建一个简单的程序应用吧，就当演示了</p>
+<h3 id="安装flyctl"><a href="#安装flyctl" class="headerlink" title="安装flyctl"></a>安装flyctl</h3><p>这个是一个在自己电脑运行的工具，用来和fly的服务器链接，以及传输代码之类的。</p>
+<p>对于MacOS，可以用下面的命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">brew install flyctl<br></code></pre></td></tr></table></figure>
+
+<p>对于Linux是这个：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -L https://fly.io/install.sh | sh<br></code></pre></td></tr></table></figure>
+
+<p>Windows下需要使用<code>PowerShell</code>运行下面的命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pwsh -Command <span class="hljs-string">&quot;iwr https://fly.io/install.ps1 -useb | iex&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>如果发现报错，找不到pwsh，那么可以选择更新最新的PowerShell，或者可以用下面的指令代替：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">iwr https://fly.io/install.ps1 -useb | iex<br></code></pre></td></tr></table></figure>
+
+<p>安装是一次性的，安装完后就不用再管了；如果需要确认是否安装，可以使用<code>flyctl version</code>来查看。</p>
+<h3 id="创建并登陆账号"><a href="#创建并登陆账号" class="headerlink" title="创建并登陆账号"></a>创建并登陆账号</h3><p>创建账号：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">fly auth signup<br></code></pre></td></tr></table></figure>
+
+<p>会弹出一个网页，可以通过邮箱或者Github进行注册。注册完成后可以用下面的命令登录，但是应该会自动登陆的吧：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">fly auth login<br></code></pre></td></tr></table></figure>
+
+<h3 id="在本地搭建好需要使用的程序"><a href="#在本地搭建好需要使用的程序" class="headerlink" title="在本地搭建好需要使用的程序"></a>在本地搭建好需要使用的程序</h3><p>这里我直接用我的SeSe API作为程序了，再写一遍有点累，这里直接上就好~</p>
+<p>反正只要你的程序可以开放一个端口给别人访问，基本上就可以说OK了。</p>
+<h3 id="部署到Fly-io"><a href="#部署到Fly-io" class="headerlink" title="部署到Fly.io"></a>部署到Fly.io</h3><p>在写好的程序目录下面，输入这个指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">fly launch<br></code></pre></td></tr></table></figure>
+
+<p>随后会进入一个交互式界面，按顺序提交就好，随后再输入下面的指令进行部署：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">fly deploy<br></code></pre></td></tr></table></figure>
+
+<p>成功后，使用<code>fly open</code>打开浏览器，就可以正常访问啦~如果后续需要修改源代码，可以进行多次的deploy，对应的也会生成新的版本，从v0开始。</p>
+<h2 id="Vercel"><a href="#Vercel" class="headerlink" title="Vercel"></a>Vercel</h2><p>个人使用是免费的，并且提供了域名访问，使用非常方便快捷。下面一样，直接部署一个项目出来~</p>
+<h3 id="注册Vercel"><a href="#注册Vercel" class="headerlink" title="注册Vercel"></a>注册Vercel</h3><p>直接在官网进行注册就好，有下面这些注册的方式：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/1.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>当然，随后也是需要手机号注册的，这个正常注册就好~注册完成后应该可以看到一个这样的界面：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/2.png" srcset="/img/loading.gif" lazyload class="">
+
+<h3 id="部署项目"><a href="#部署项目" class="headerlink" title="部署项目"></a>部署项目</h3><p>咳咳咳，这里还是一样，直接使用我自己的API作为案例吧，首先在刚刚那个<code>Clone Template</code>选项菜单里面，搜索<code>Python</code>，选择第一个就好~</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/3.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>然后选择<code>Deploy</code>选项，按照给的顺序做就好~</p>
+<p>首先你需要创建一个Git仓库，主要是可以更加方便的部署项目，可以参考下图：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/4.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>随后点击创建就好，让它工作一会；随后我们可以打开自己的Github，找到这样的一个新仓库：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/5.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>这个<code>api</code>文件夹就是源代码储存的地方啦，直接把自己的源代码放进去就好（运行的主程序应该为<code>index.py</code>），随后应该会自动进行编译部署，再次访问官方给的链接就可以哩！</p>
+<blockquote>
+<p>不过，国内貌似访问不了了，原因呵呵，懂得都懂~ 毕竟你在这里，你就必须遵守这里的法律</p>
+<p>另外，我的API因为使用了Fast API库，所以应该是访问不了滴，如果你的程序没有使用其他的库或许可以正常使用？</p>
+<p>反正看控制台就好，如果报错应该都能看懂吧</p>
+</blockquote>
+<h2 id="Netlify"><a href="#Netlify" class="headerlink" title="Netlify"></a>Netlify</h2><p>这个是一个类似Github Page，但是有比Github Page更强的静态网站托管服务，这里直接用我自己的博客做一个案例吧。</p>
+<h3 id="创建账号"><a href="#创建账号" class="headerlink" title="创建账号"></a>创建账号</h3><p>这个我不多说了吧？直接官网注册登录就好~，随后正常选择，这里我用的是Github进行登录，然后或许你可以看到一个这样的页面：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/6.png" srcset="/img/loading.gif" lazyload class="">
+
+<h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h3><p>我这里直接选择我的<code>github.io</code>，随后点击<code>Deploy</code>就好~成功以后可以看到这样的情况：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/7.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>然后按照官方的方法正常继续就好，直接在这个网页上按照顺序就是~</p>
+<ol>
+<li>Customize site name，首先确认网站域名，直接输入想要的域名就好，比如我想要的域名是<code>KaedeLab</code>，那么我的网站可以通过<code>kaedelab.netlify.app</code>来访问~（真的可以访问哦）</li>
+<li>Deploy Again，这个只是一个提示，就是只要你更新仓库，那么自动就会更新网页啦，非常方便的！</li>
+<li>设置自定义的domain，这个可以通过阿里云之类的购买域名，然后在这里设置，具体使用方法我会在另外一个文章提到。</li>
+</ol>
+<p>其他的不多说了，自己看吧？毕竟这个就是一个静态网站部署，自己摸索摸索才能真正学会如何使用的吧！</p>
+<h2 id="Railway"><a href="#Railway" class="headerlink" title="Railway"></a>Railway</h2><p>Railway提供免费容器服务。支持主流语言python、nodejs等直接运行，支持Dockerfile在线构建docker镜像。支持使用CLI部署。此外，还提供大量模板直接构建。例如code server（vscode网页版）等。</p>
+<ul>
+<li>不自动休眠，不自动删数据（手动重新部署当然会删），支持自定义域名，自动SSL加密。</li>
+<li>提供数据库支持，部署完成之后添加数据库插件即可。</li>
+<li>按量付费，每个月5美元免费额度，跑个小程序够用。具体可以参考定价。</li>
+</ul>
+<blockquote>
+<p>注意，现在这个也是需要绑定银行卡的哩，烦死了！不过我还是在这里记录完整的使用方法~</p>
+<p>当然，正常使用还是可以不使用银行卡的，就比如下面这个案例，我部署了自己的SeSeAPI</p>
+</blockquote>
+<h3 id="注册-登录"><a href="#注册-登录" class="headerlink" title="注册&amp;登录"></a>注册&amp;登录</h3><p>我这里直接用Github一键登录了，方便一些~注册完成并且同意各种许可以后你会看到一个这样的页面：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/8.png" srcset="/img/loading.gif" lazyload class="">
+
+<h3 id="部署项目-1"><a href="#部署项目-1" class="headerlink" title="部署项目"></a>部署项目</h3><p>这里直接创建新项目就好，我这里老样子，使用我的FastAPI项目进行部署，直接选择从模板构建，搜索<code>FastAPI</code>即可：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/9.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>选择后继续，创建需要的仓库就好~然后点击<code>Deploy</code>，接下来就是等待了，等待完成后应该可以看到这样的场景：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/10.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>这个时候已经可以通过域名直接访问啦~就是那个绿色的。</p>
+<h3 id="上传代码"><a href="#上传代码" class="headerlink" title="上传代码"></a>上传代码</h3><p>这个不多说了吧？要么用Git工具，要么直接上传代码文件就好，我这里使用Git Bash进行上传：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/11.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>上传完后，Railway会自动的进行再部署，直接等待一会尝试访问即可~</p>
+<p>这里我的API部署好啦，直接<a target="_blank" rel="noopener" href="https://sese.up.railway.app/">访问</a>就好~</p>
+<h2 id="Cloud-Flare"><a href="#Cloud-Flare" class="headerlink" title="Cloud Flare"></a>Cloud Flare</h2><p>这个是一个非常好的静态网站托管平台，还会给一个免费的域名！本网站现在就托管在这里啦~</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/12.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>这个的使用方法很简单，先进行注册，注册后登录账号即可，随后你可以看到如下的页面：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/13.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>点击左边侧边栏的<code>Pages</code>选项卡，随后你可以看到如下页面：</p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/14.png" srcset="/img/loading.gif" lazyload class="">
+
+<p>随后正常创建应用程序就好，按照步骤啦即可，你可以从自己的Github同步，也可以手动的上传图片，都可以滴，不过注意一下，这里我选择的是<code>Pages</code>，不是<code>Workers</code></p>
+<img src="/2023/07/24/%E5%B0%86%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%E4%BA%8EPaaS%E5%B9%B3%E5%8F%B0/15.png" srcset="/img/loading.gif" lazyload class="">
+
+<h2 id="其他…"><a href="#其他…" class="headerlink" title="其他…"></a>其他…</h2><p>上面介绍的这些应该已经足够使用了，其他的我暂时没有用到，如果需要的话自行去官方学习吧？反正上面官网链接都给出来啦~</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%BD%91%E7%AB%99/" class="print-no-link">#网站</a>
+      
+        <a href="/tags/PaaS/" class="print-no-link">#PaaS</a>
+      
+        <a href="/tags/Web/" class="print-no-link">#Web</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>将网站托管于PaaS平台</div>
+      <div>https://kaedelab.pages.dev/2023/07/24/将网站托管于PaaS平台/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Kaede</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年7月24日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/07/25/Pixiv%E5%9B%BE%E7%89%87%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" title="Pixiv图片反向代理">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Pixiv图片反向代理</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/07/23/Github%E4%B8%BB%E9%A1%B5%E7%BE%8E%E5%8C%96/" title="Github主页美化">
+                        <span class="hidden-mobile">Github主页美化</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="#" target="_blank" rel="nofollow noopener">Powered by <span>Kaede</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

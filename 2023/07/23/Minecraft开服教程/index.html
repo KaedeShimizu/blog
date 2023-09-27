@@ -1,0 +1,884 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Kaede">
+  <meta name="keywords" content="Kaede, Blog, 博客">
+  
+    <meta name="description" content="核心介绍及链接官服Mojang官方发布的服务端，不支持插件&#x2F;MOD，只支持数据包 因为Mojang网站的下载不好找并且只有最新版，可以在这个收集站下载 插件服插件服是只能使用插件（Plugin）的服务端核心，包括以下几个主流的核心 插件服的插件基本通用，版本向前兼容（比如支持1.13的插件，如果没有描述，多半支持1.14及以后的版本）  Bukkit Spigot（Bukkit的分支）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Minecraft开服教程">
+<meta property="og:url" content="https://kaedelab.pages.dev/2023/07/23/Minecraft%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="Kaede Lab">
+<meta property="og:description" content="核心介绍及链接官服Mojang官方发布的服务端，不支持插件&#x2F;MOD，只支持数据包 因为Mojang网站的下载不好找并且只有最新版，可以在这个收集站下载 插件服插件服是只能使用插件（Plugin）的服务端核心，包括以下几个主流的核心 插件服的插件基本通用，版本向前兼容（比如支持1.13的插件，如果没有描述，多半支持1.14及以后的版本）  Bukkit Spigot（Bukkit的分支）">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-07-23T09:06:42.000Z">
+<meta property="article:modified_time" content="2023-07-23T11:08:23.322Z">
+<meta property="article:author" content="Kaede">
+<meta property="article:tag" content="Minecraft">
+<meta property="article:tag" content="服务器">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Minecraft开服教程 - Kaede Lab</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"kaedelab.pages.dev","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Kaede Lab</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Minecraft开服教程"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-07-23 17:06" pubdate>
+          2023年7月23日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          10k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          84 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Minecraft开服教程</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="核心介绍及链接"><a href="#核心介绍及链接" class="headerlink" title="核心介绍及链接"></a>核心介绍及链接</h1><h2 id="官服"><a href="#官服" class="headerlink" title="官服"></a>官服</h2><p>Mojang官方发布的服务端，不支持插件&#x2F;MOD，只支持数据包</p>
+<p>因为Mojang网站的下载不好找并且只有最新版，可以在这个<a target="_blank" rel="noopener" href="https://mcversions.net/">收集站</a>下载</p>
+<h2 id="插件服"><a href="#插件服" class="headerlink" title="插件服"></a>插件服</h2><p>插件服是只能使用插件（Plugin）的服务端核心，包括以下几个主流的核心</p>
+<p>插件服的插件基本通用，版本向前兼容（比如支持1.13的插件，如果没有描述，多半支持1.14及以后的版本）</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://getbukkit.org/">Bukkit</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.spigotmc.org/">Spigot（Bukkit的分支）</a> （不提供最新版下载，可以自行构建或寻找第三方构建站）</li>
+<li><a target="_blank" rel="noopener" href="https://papermc.io/downloads">Paper（Spigot的分支|优化性能）</a></li>
+<li><a target="_blank" rel="noopener" href="https://ci.tivy.ca/">Airplane（Paper的分支|优化性能）</a></li>
+<li><a target="_blank" rel="noopener" href="https://purpur.pl3x.net/downloads/">Purpur（Paper的分支|性能最好）</a></li>
+<li>其他基于Bukkit的插件服</li>
+</ol>
+<h2 id="Mod服"><a href="#Mod服" class="headerlink" title="Mod服"></a>Mod服</h2><p>MOD服是只能使用MOD的服务端核心，根据加载器的不同，分为以下两种核心</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://files.minecraftforge.net/net/minecraftforge/forge/">Forge</a></li>
+<li><a target="_blank" rel="noopener" href="https://fabricmc.net/use/">Fabric</a></li>
+</ol>
+<p>两者的mod不互通（作者标注了互通的除外）</p>
+<p>注意，使用MOD服核心时客户端连接服务端需要</p>
+<ol>
+<li>服务端和客户端的加载器版本（Forge&#x2F;Fabric版本）一致</li>
+<li>服务端和客户端的服务端MOD一致</li>
+<li>服务端和客户端的服务端MOD版本一致</li>
+</ol>
+<h2 id="插件MOD服"><a href="#插件MOD服" class="headerlink" title="插件MOD服"></a>插件MOD服</h2><p>同时支持插件和mod的服务端核心，有以下特点</p>
+<ol>
+<li>性能比纯插件&#x2F;MOD服差</li>
+<li>并非兼容所有插件和mod（不兼容不一定是不能加载，也可能是某个功能不可使用&#x2F;使用时出现异常）</li>
+<li>客户端的连接同样需要满足和上述mod服相同的条件</li>
+<li>新手服主强烈不建议使用</li>
+</ol>
+<p>包括以下几个主流核心</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://mohistmc.com/download/">Mohist（使用Forge的mod和Bukkit插件）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/IzzelAliz/Arclight/releases">Arclight（使用Forge的mod和Bukkit插件）</a></li>
+<li><a target="_blank" rel="noopener" href="https://catmc.org/">CatServer（使用Forge的mod和Bukkit插件，仅支持1.12.2）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/magmafoundation/Magma">Magma（使用Forge的mod和Bukkit插件）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.spongepowered.org/">Sponge（使用Forge的mod和Sponge插件，仅支持1.12.2）</a></li>
+</ol>
+<h1 id="开服脚本"><a href="#开服脚本" class="headerlink" title="开服脚本"></a>开服脚本</h1><h2 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h2><p>开服所用的指令就一条，一般是java开头的那一条，其他部分都是起辅助作用的，比如设置cmd窗口标题、自动重启等</p>
+<p>这里拿一个典型的开服指令举例: <code>java -Xmx2G -Xms2G -jar server.jar nogui</code></p>
+<p>这里的<code>server.jar</code>是示例，实际使用时请手动改成核心jar的名字</p>
+<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><p>java意为使用可执行文件java，一般java需要在path中设置，如果需要指定使用的java的话需要修改path中的java或者使用绝对路径。</p>
+<blockquote>
+<p>假设java路径位于 <code>C:\Program Files\Java\jdk1.8.0_301\bin\java</code></p>
+<p>一般的脚本 <code>java -Xmx2G -Xms2G -jar server.jar nogui</code></p>
+<p>需要改为 <code>&quot;C:\Program Files\Java\jdk1.8.0_301\bin\java&quot; -Xmx2G -Xms2G -jar server.jar nogui</code></p>
+</blockquote>
+<h3 id="JVM参数"><a href="#JVM参数" class="headerlink" title="JVM参数"></a>JVM参数</h3><p>设置jvm参数是开服非常重要的一环，使用的最大内存，最小内存，优化参数等都是jvm参数</p>
+<p><code>-Xmx2G</code> 设置最大可用内存为2G，这里红字的2G可以替换成其他内存大小，单位除了G之外可以用M，例如 <code>-Xmx256M</code></p>
+<p><code>-Xms2G</code> 设置初始内存为2G，这里红字的2G可以替换成其他内存大小，单位除了G之外可以用M，例如 <code>-Xms256M</code></p>
+<p><code>-jar</code> 意为通过jar文件启动，后面需要接文件名字，如果后面接的jar文件名字错误或者jar文件损坏则会报错</p>
+<h3 id="MC服务端参数"><a href="#MC服务端参数" class="headerlink" title="MC服务端参数"></a>MC服务端参数</h3><p><code>nogui</code> 意为不显示mc自带的ui界面，不管是否添加此参数，服务端始终会将日志输出至命令行</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="Unrecognized-VM-option-‘xxx’"><a href="#Unrecognized-VM-option-‘xxx’" class="headerlink" title="Unrecognized VM option ‘xxx’"></a>Unrecognized VM option ‘xxx’</h3><p>这里是你使用的开服脚本中的某个参数，不被你的Java接受</p>
+<p>xxx可能是 +AggressiveOpts 也可能是 +UseCompressedOops 或者是你启动脚本中的其他不被接受的参数</p>
+<p><strong>解决办法：</strong></p>
+<p>将开服脚本中的包含xxx的那一段参数删除</p>
+<p>Unrecognized VM option ‘+AggressiveOpts’ 就删除 -XX:+AggressiveOpts</p>
+<p>Unrecognized VM option ‘ +UseCompressedOops ‘ 就删除 -XX:+UseCompressedOops</p>
+<h3 id="Could-not-reserve-enough-space-for-object-heap"><a href="#Could-not-reserve-enough-space-for-object-heap" class="headerlink" title="Could not reserve enough space for object heap"></a>Could not reserve enough space for object heap</h3><p>设置了过大的内存</p>
+<p><strong>解决办法：</strong></p>
+<p>将开服脚本中的内存调小（注意，32位java的可用内存受限制，只能使用最大1.4G到1.6G的内存，解决办法是更换64位的Java）</p>
+<p>将参数换成 <code>-Xmx1G -Xms1G</code></p>
+<p>内存分配一般是给系统所有可用内存大小的2&#x2F;3（给系统和其他应用留出空间），如果你电脑的内存低于1G，就不要想着开服了</p>
+<h3 id="页面文件太小，无法完成操作"><a href="#页面文件太小，无法完成操作" class="headerlink" title="页面文件太小，无法完成操作"></a>页面文件太小，无法完成操作</h3><p>设置了过大的内存</p>
+<p><strong>解决办法：</strong></p>
+<p>将开服脚本中的内存调小（注意，32位java的可用内存受限制，只能使用最大1.4G到1.6G的内存，解决办法是更换64位的Java）</p>
+<p>将参数换成 <code>-Xmx1G -Xms1G</code></p>
+<p>内存分配一般是给系统所有可用内存大小的2&#x2F;3（给系统和其他应用留出空间），如果你电脑的内存低于1G，就不要想着开服了</p>
+<h1 id="搭建服务器并运行"><a href="#搭建服务器并运行" class="headerlink" title="搭建服务器并运行"></a>搭建服务器并运行</h1><h2 id="安装Java"><a href="#安装Java" class="headerlink" title="安装Java"></a>安装Java</h2><p>开服需要安装Java （64位机器装64位Java），具体版本一般用Java8就行了</p>
+<h2 id="获取核心"><a href="#获取核心" class="headerlink" title="获取核心"></a>获取核心</h2><p>首先选择自己要使用的核心和游戏版本，新建一个文件夹，确保其路径没有中文</p>
+<p>下载核心后移动到此文件夹。</p>
+<p>此处注意，forge和fabric的核心是需要通过安装获得的，其他核心大多是一个单独的Jar文件，会自动下载需要的lib文件</p>
+<p>移动核心时</p>
+<ul>
+<li>forge请连着 libraries 文件夹一起</li>
+<li>fabric请连着 .fabric 和 .fabric-installer 两个文件夹一起</li>
+</ul>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>官服的jar文件可以双击打开，但是其他的核心据我所知均需要使用开服脚本，也就是前面说到的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">java -Xmx2G -Xms2G -jar server.jar nogui<br></code></pre></td></tr></table></figure>
+
+<p>启动之后如果一闪然后关闭，此时文件夹中会自动生成 eula.txt；打开 eula.txt ，将其中的 false 改成 true （注意不要打错单词），保存并关闭</p>
+<p>此时再启动脚本，服务端会正常启动~</p>
+<h1 id="服务端配置文件"><a href="#服务端配置文件" class="headerlink" title="服务端配置文件"></a>服务端配置文件</h1><h2 id="server-properties"><a href="#server-properties" class="headerlink" title="server.properties"></a>server.properties</h2><p>这个文件是所有服务端（上面列出的主流服务端）都会生成的一个配置文件，位于核心Jar文件同级目录中</p>
+<p>一些基础的参数需要在此文件中设置，下面会列出一些常用参数的用法（以1.16的为参考）</p>
+<ol>
+<li>allow-flight&#x3D;false 允许玩家在安装添加飞行功能的mod前提下在生存模式下飞行</li>
+<li>allow-nether&#x3D;true 允许玩家进入下界</li>
+<li>difficulty&#x3D;easy 定义服务器的游戏难度</li>
+<li>enable-command-block&#x3D;false 是否启用命令方块</li>
+<li>level-seed&#x3D; 种子</li>
+<li>level-type&#x3D;default 地图所生成的类型 default:标准的世界 flat:超平坦 largebiomes:巨大生物群系</li>
+<li>max-players&#x3D;20 最大玩家数量</li>
+<li>max-tick-time&#x3D;60000 最大刻时长，单位毫秒，当一个游戏刻的时长超过此数值后游戏会强行停止并崩溃（paper会保存存档、插件数据），设置为-1以禁用</li>
+<li>motd&#x3D;A Minecraft Server 多人游戏界面服务器的信息</li>
+<li>online-mode&#x3D;true 在线模式，设置为false允许离线模式的玩家进入服务器</li>
+<li>pvp&#x3D;true 玩家pvp</li>
+<li>server-ip&#x3D; 服务器ip，如果你不是清楚地知道你在改什么，让它留空，不要动它</li>
+<li>server-port&#x3D;25565 服务器端口，如果你要开两个服务端或者有其他程序占用了25565端口的话可以自行修改</li>
+<li>view-distance&#x3D;10 服务端视距，如果卡顿的话可以减小该值，可以设置为6</li>
+<li>white-list&#x3D;false 白名单，如果开启，没有添加过白名单的玩家将会无法进入服务器，如果是离线模式的服务器，添加白名单的玩家必须进入过服务器，否则即使添加了白名单，此玩家也无法进入服务器（离线服务器建议用插件或mod实现白名单）</li>
+<li>未列出的内容见<a target="_blank" rel="noopener" href="https://minecraft.fandom.com/zh/wiki/Server.properties#Java.E7.89.88_3">这里</a></li>
+</ol>
+<h2 id="bukkit-yml"><a href="#bukkit-yml" class="headerlink" title="bukkit.yml"></a>bukkit.yml</h2><p>基于bukkit的服务端会生成此文件，位于核心Jar文件同级目录中</p>
+<p>配置参考<a target="_blank" rel="noopener" href="https://bukkit.gamepedia.com/Bukkit.yml">wiki(英文)</a></p>
+<h2 id="spigot-yml"><a href="#spigot-yml" class="headerlink" title="spigot.yml"></a>spigot.yml</h2><p>基于spigot的服务端会生成此文件，位于核心Jar文件同级目录中</p>
+<p>配置参考<a target="_blank" rel="noopener" href="https://www.spigotmc.org/wiki/spigot-configuration/">wiki(英文)</a></p>
+<h2 id="paper-yml"><a href="#paper-yml" class="headerlink" title="paper.yml"></a>paper.yml</h2><p>基于paper的服务端会生成此文件，位于核心Jar文件同级目录中</p>
+<p>配置参考<a target="_blank" rel="noopener" href="https://paper.readthedocs.io/en/latest/server/configuration.html">wiki(英文)</a></p>
+<h2 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h2><p>插件的配置文件一般都会生成在<code>plugins</code>文件夹中的插件同名文件夹内</p>
+<p>一般使用yml文件作为配置文件，具体配置方法看插件发布贴作者的说明</p>
+<p>yml文件可以直接用文本文档打开，但是没有语法高亮，推荐使用vscode并添加yaml插件</p>
+<p>yml语法可以参考<a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/yaml-intro.html">这里</a></p>
+<p>如果reload时配置文件有语法错误，后台会报一长串错误，并且指令的返回消息可能不会正常显示</p>
+<h2 id="mod配置"><a href="#mod配置" class="headerlink" title="mod配置"></a>mod配置</h2><p>mod的配置一般在config文件夹中的mod名开头的文件&#x2F;文件夹中，1.12前文件格式为cfg，之后为toml</p>
+<p>一般文件中会有英文注释，如果看不懂不要乱改（先去机翻）</p>
+<p>这两种文件都可以直接用文本文档打开，但是没有语法高亮，推荐使用vscode并添加对应插件</p>
+<h1 id="插件安装-配置"><a href="#插件安装-配置" class="headerlink" title="插件安装&#x2F;配置"></a>插件安装&#x2F;配置</h1><h2 id="找插件"><a href="#找插件" class="headerlink" title="找插件"></a>找插件</h2><p>插件一般发布在<a target="_blank" rel="noopener" href="https://www.spigotmc.org/search/?type=resource_update">spigot</a>上</p>
+<p>国内找插件可以去<a target="_blank" rel="noopener" href="https://www.mcbbs.net/forum-servermod-1.html">mcbbs</a>，搬运的插件一般都会汉化用法和配置文件，提供明确的获取方式</p>
+<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>插件服的插件基本通用，版本向前兼容（比如支持1.13的插件，如果没有描述，多半支持1.14及以后的版本）</p>
+<p>下载插件得到插件的jar文件后将jar文件移动到插件服的plugins文件夹中，然后重启服务端</p>
+<p>如果启动时没有报错，并且启动完之后在控制台输plugins看到插件名字并且是绿字说明插件启动&#x2F;安装成功</p>
+<h2 id="一些插件的链接"><a href="#一些插件的链接" class="headerlink" title="一些插件的链接"></a>一些插件的链接</h2><h3 id="EssentialsX"><a href="#EssentialsX" class="headerlink" title="EssentialsX"></a>EssentialsX</h3><p>提供大部分的基础指令和对玩家限制。使用时需要手动给default组添加权限。注意需要下载带X的版本</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-619883-1-1.html">https://www.mcbbs.net/thread-619883-1-1.html</a></p>
+<p>中文Wiki：<a target="_blank" rel="noopener" href="https://mineplugin.org/Essentials">https://mineplugin.org/Essentials</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://essentialsx.net/">https://essentialsx.net/</a></p>
+<p>英文Wiki：<a target="_blank" rel="noopener" href="https://essentialsx.net/wiki/Home.html">https://essentialsx.net/wiki/Home.html</a></p>
+<p>构建：<a target="_blank" rel="noopener" href="https://ci.ender.zone/job/EssentialsX/">https://ci.ender.zone/job/EssentialsX/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/EssentialsX/Essentials/">https://github.com/EssentialsX/Essentials/</a></p>
+<h3 id="Luckperms"><a href="#Luckperms" class="headerlink" title="Luckperms"></a>Luckperms</h3><p>提供权限组管理，个人认为比GroupManager好用，安装完第一次启动可能比较慢，请耐心等待</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-676818-1-1.html">https://www.mcbbs.net/thread-676818-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://luckperms.net/">https://luckperms.net/</a></p>
+<p>中文Wiki：<a target="_blank" rel="noopener" href="https://pluginscdtribe.github.io/wiki/luckperms/">https://pluginscdtribe.github.io/wiki/luckperms/</a></p>
+<p>构建：<a target="_blank" rel="noopener" href="https://ci.lucko.me/job/LuckPerms/">https://ci.lucko.me/job/LuckPerms/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/lucko/LuckPerms/">https://github.com/lucko/LuckPerms/</a></p>
+<h3 id="AuthMeReloaded"><a href="#AuthMeReloaded" class="headerlink" title="AuthMeReloaded"></a>AuthMeReloaded</h3><p>提供登录功能，替代正版验证</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-442729-1-1.html">https://www.mcbbs.net/thread-442729-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/authme-reloaded.6269">https://www.spigotmc.org/resources/authme-reloaded.6269</a></p>
+<p>英文Wiki：<a target="_blank" rel="noopener" href="https://github.com/AuthMe/AuthMeReloaded/tree/master/docs">https://github.com/AuthMe/AuthMeReloaded/tree/master/docs</a></p>
+<p>构建：<a target="_blank" rel="noopener" href="https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/">https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/AuthMe/AuthMeReloaded/">https://github.com/AuthMe/AuthMeReloaded/</a></p>
+<h3 id="CoreProtect"><a href="#CoreProtect" class="headerlink" title="CoreProtect"></a>CoreProtect</h3><p>记录玩家的几乎所有操作，提供按区域&#x2F;玩家&#x2F;时间回档的功能，防熊利器，但是要定期清理，不然会很占储存</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-682499-1-1.html">https://www.mcbbs.net/thread-682499-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/coreprotect.8631/">https://www.spigotmc.org/resources/coreprotect.8631/</a></p>
+<p>中文Wiki：<a target="_blank" rel="noopener" href="https://mineplugin.org/CoreProtect">https://mineplugin.org/CoreProtect</a></p>
+<p>Residence：领地插件，允许玩家圈地以保护自己的房屋农田等建筑。虽然是付费插件，但是提供了免费版下载，会限制在63格以上高度放置流体和中立方块，一定要手动关闭，方法见mcbbs帖子</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-631343-1-1.html">https://www.mcbbs.net/thread-631343-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-16.11480/">https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-16.11480/</a></p>
+<p>免费下载：<a target="_blank" rel="noopener" href="https://zrips.net/Residence/">https://zrips.net/Residence/</a></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/Zrips/Residence">https://github.com/Zrips/Residence</a></p>
+<h3 id="Vault"><a href="#Vault" class="headerlink" title="Vault"></a>Vault</h3><p>经济及部分插件的前置</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/vault.34315/">https://www.spigotmc.org/resources/vault.34315/</a></p>
+<p>mcbbs（旧版本，仅供参考）：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-703488-1-1.html">https://www.mcbbs.net/thread-703488-1-1.html</a></p>
+<p>中文Wiki：<a target="_blank" rel="noopener" href="https://mineplugin.org/Vault">https://mineplugin.org/Vault</a></p>
+<h3 id="XConomy"><a href="#XConomy" class="headerlink" title="XConomy"></a>XConomy</h3><p>经济插件，国产插件，作者修bug快，也可以用其他的经济插件代替</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-962904-1-1.html">https://www.mcbbs.net/thread-962904-1-1.html</a> (包含Wiki)</p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/xconomy.75669/">https://www.spigotmc.org/resources/xconomy.75669/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/YiC200333/XConomy">https://github.com/YiC200333/XConomy</a></p>
+<h3 id="Skinsrestorer"><a href="#Skinsrestorer" class="headerlink" title="Skinsrestorer"></a>Skinsrestorer</h3><p>皮肤插件，允许离线服务器显示正版皮肤（没办法，谁叫国内离线玩家多）</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-805404-1-1.html">https://www.mcbbs.net/thread-805404-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/skinsrestorer.2124/">https://www.spigotmc.org/resources/skinsrestorer.2124/</a></p>
+<p>英文Wiki：<a target="_blank" rel="noopener" href="https://github.com/SkinsRestorer/SkinsRestorerX/wiki">https://github.com/SkinsRestorer/SkinsRestorerX/wiki</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/SkinsRestorer/SkinsRestorerX">https://github.com/SkinsRestorer/SkinsRestorerX</a></p>
+<h3 id="PlaceholderAPI"><a href="#PlaceholderAPI" class="headerlink" title="PlaceholderAPI"></a>PlaceholderAPI</h3><p>占位符变量，返回你需要的玩家数据，很多插件的软前置</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-829732-1-1.html">https://www.mcbbs.net/thread-829732-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/placeholderapi.6245/">https://www.spigotmc.org/resources/placeholderapi.6245/</a></p>
+<p>中文Wiki：<a target="_blank" rel="noopener" href="https://mineplugin.org/PlaceholderAPI">https://mineplugin.org/PlaceholderAPI</a></p>
+<h3 id="LockettePro"><a href="#LockettePro" class="headerlink" title="LockettePro"></a>LockettePro</h3><p>木牌箱子锁</p>
+<p>和LWCX相比牌子会占用一格空间，且给予的信任人数有上限，要给很多信任时建议使用圈地，但是使用简单</p>
+<p>mcbbs（旧版本，仅供参考）：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-944015-1-1.html">https://www.mcbbs.net/thread-944015-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/lockettepro-for-1-14-1-15-1-16.74354/">https://www.spigotmc.org/resources/lockettepro-for-1-14-1-15-1-16.74354/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/brunyman/LockettePro">https://github.com/brunyman/LockettePro</a></p>
+<p>英文Wiki：<a target="_blank" rel="noopener" href="https://github.com/connection-lost/LockettePro/wiki">https://github.com/connection-lost/LockettePro/wiki</a></p>
+<h3 id="LWCX"><a href="#LWCX" class="headerlink" title="LWCX"></a>LWCX</h3><p>箱子锁</p>
+<p>和LockettePro相比不会有牌子占用一格空间，添加信任的数量无上限，容器放下即锁</p>
+<p>mcbbs（旧版本，仅供参考）：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-892322-1-1.html">https://www.mcbbs.net/thread-892322-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/lwc-extended.69551/">https://www.spigotmc.org/resources/lwc-extended.69551/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/pop4959/LWCX">https://github.com/pop4959/LWCX</a></p>
+<p>构建：<a target="_blank" rel="noopener" href="https://ci.codemc.io/job/pop4959/job/LWCX-dev/">https://ci.codemc.io/job/pop4959/job/LWCX-dev/</a></p>
+<p>英文Wiki：<a target="_blank" rel="noopener" href="https://github.com/pop4959/LWCX/wiki">https://github.com/pop4959/LWCX/wiki</a></p>
+<h3 id="Multiverse-Core"><a href="#Multiverse-Core" class="headerlink" title="Multiverse-Core"></a>Multiverse-Core</h3><p>多世界插件，方便管理多个世界，是部分插件的前置</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-1016455-1-1.html">https://www.mcbbs.net/thread-1016455-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://dev.bukkit.org/projects/multiverse-core%EF%BC%88%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91%EF%BC%89">https://dev.bukkit.org/projects/multiverse-core（可能需要魔法上网）</a></p>
+<p>中文Wiki：<a target="_blank" rel="noopener" href="https://mineplugin.org/Multiverse-Core">https://mineplugin.org/Multiverse-Core</a></p>
+<p>构建：<a target="_blank" rel="noopener" href="https://ci.onarandombox.com/job/Multiverse-Core/">https://ci.onarandombox.com/job/Multiverse-Core/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/Multiverse/Multiverse-Core/">https://github.com/Multiverse/Multiverse-Core/</a></p>
+<h3 id="QuickShop-Reremake"><a href="#QuickShop-Reremake" class="headerlink" title="QuickShop Reremake"></a>QuickShop Reremake</h3><p>商店插件，允许使用箱子，末影箱等容器作为商店出售或收购物品</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-809496-1-1.html%EF%BC%88%E5%8C%85%E5%90%ABwiki%EF%BC%89">https://www.mcbbs.net/thread-809496-1-1.html（包含wiki）</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/quickshop-reremake-1-16-ready-say-hello-with-rgb.62575/">https://www.spigotmc.org/resources/quickshop-reremake-1-16-ready-say-hello-with-rgb.62575/</a></p>
+<p>构建：<a target="_blank" rel="noopener" href="https://ci.codemc.io/job/Ghost-chu/job/QuickShop-Reremake/">https://ci.codemc.io/job/Ghost-chu/job/QuickShop-Reremake/</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/Ghost-chu/QuickShop-Reremake">https://github.com/Ghost-chu/QuickShop-Reremake</a></p>
+<h3 id="PlayerTitle"><a href="#PlayerTitle" class="headerlink" title="PlayerTitle"></a>PlayerTitle</h3><p>称号，国产插件</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-1004671-1-1.html">https://www.mcbbs.net/thread-1004671-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/playertitle.78048/">https://www.spigotmc.org/resources/playertitle.78048/</a></p>
+<h3 id="FarmProtect"><a href="#FarmProtect" class="headerlink" title="FarmProtect"></a>FarmProtect</h3><p>保护农田不被踩坏</p>
+<p>mcbbs（旧版本，仅供参考）：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-797619-1-1.html">https://www.mcbbs.net/thread-797619-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/farmprotect.6259/">https://www.spigotmc.org/resources/farmprotect.6259/</a></p>
+<h3 id="Lite-Sign-In"><a href="#Lite-Sign-In" class="headerlink" title="Lite Sign In"></a>Lite Sign In</h3><p>签到，国产插件</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-1056080-1-1.html">https://www.mcbbs.net/thread-1056080-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/lite-sign-in-1-7-1-16-sign-in-rewards-chest-gui-mysql-sqlite-customizable.79584/">https://www.spigotmc.org/resources/lite-sign-in-1-7-1-16-sign-in-rewards-chest-gui-mysql-sqlite-customizable.79584/</a></p>
+<h3 id="Citizens"><a href="#Citizens" class="headerlink" title="Citizens"></a>Citizens</h3><p>NPC插件</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-797288-1-1.html(%E5%B8%A6wiki)">https://www.mcbbs.net/thread-797288-1-1.html(带wiki)</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/citizens.13811/">https://www.spigotmc.org/resources/citizens.13811/</a></p>
+<h3 id="Citizens-CMD"><a href="#Citizens-CMD" class="headerlink" title="Citizens CMD"></a>Citizens CMD</h3><p>点击NPC使用指令</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-1002989-1-1.html">https://www.mcbbs.net/thread-1002989-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/citizens-cmd.30224/">https://www.spigotmc.org/resources/citizens-cmd.30224/</a></p>
+<h3 id="TrMenu"><a href="#TrMenu" class="headerlink" title="TrMenu"></a>TrMenu</h3><p>菜单（2.0版本付费，但是GitHub有下载）</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-918078-1-1.html">https://www.mcbbs.net/thread-918078-1-1.html</a></p>
+<p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/TrMenu/TrMenu/actions">https://github.com/TrMenu/TrMenu/actions</a></p>
+<h3 id="TrChat"><a href="#TrChat" class="headerlink" title="TrChat"></a>TrChat</h3><p>修改聊天格式</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-903335-1-1.html">https://www.mcbbs.net/thread-903335-1-1.html</a></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/Arasple/TrChat/releases/tag/1.71">https://github.com/Arasple/TrChat/releases/tag/1.71</a></p>
+<h3 id="TrHologram"><a href="#TrHologram" class="headerlink" title="TrHologram"></a>TrHologram</h3><p>悬浮字</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-923397-1-1.html">https://www.mcbbs.net/thread-923397-1-1.html</a></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/Arasple/TrHologram/releases">https://github.com/Arasple/TrHologram/releases</a></p>
+<h3 id="Plotsquared"><a href="#Plotsquared" class="headerlink" title="Plotsquared"></a>Plotsquared</h3><p>地皮</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-573771-1-1.html">https://www.mcbbs.net/thread-573771-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/plotsquared-v5.77506/">https://www.spigotmc.org/resources/plotsquared-v5.77506/</a></p>
+<h3 id="MiniMOTD"><a href="#MiniMOTD" class="headerlink" title="MiniMOTD"></a>MiniMOTD</h3><p>修改motd</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-1075003-1-1.html">https://www.mcbbs.net/thread-1075003-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/minimotd-server-list-motd-plugin-with-rgb-gradients.81254/">https://www.spigotmc.org/resources/minimotd-server-list-motd-plugin-with-rgb-gradients.81254/</a></p>
+<h3 id="TitleManager"><a href="#TitleManager" class="headerlink" title="TitleManager"></a>TitleManager</h3><p>修改玩家tab样式和右侧计分板</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-810394-1-1.html">https://www.mcbbs.net/thread-810394-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/titlemanager.1049/">https://www.spigotmc.org/resources/titlemanager.1049/</a></p>
+<h3 id="ViaVersion"><a href="#ViaVersion" class="headerlink" title="ViaVersion"></a>ViaVersion</h3><p>跨版本，允许其他版本的客户端进入服务器</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-1023597-1-1.html">https://www.mcbbs.net/thread-1023597-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/viaversion.19254/">https://www.spigotmc.org/resources/viaversion.19254/</a></p>
+<h3 id="ViaBackwards"><a href="#ViaBackwards" class="headerlink" title="ViaBackwards"></a>ViaBackwards</h3><p>跨版本，兼容更低的版本</p>
+<p>mcbbs（旧版本，仅供参考）：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-698692-1-1.html">https://www.mcbbs.net/thread-698692-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/viabackwards.27448/">https://www.spigotmc.org/resources/viabackwards.27448/</a></p>
+<h3 id="LaggRemover"><a href="#LaggRemover" class="headerlink" title="LaggRemover"></a>LaggRemover</h3><p>优化</p>
+<p>mcbbs（旧版本，仅供参考）：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-715006-1-1.html">https://www.mcbbs.net/thread-715006-1-1.html</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://dev.bukkit.org/projects/laggremover">https://dev.bukkit.org/projects/laggremover</a>  （可能需要魔法上网）</p>
+<h3 id="ScriptBlockPlus"><a href="#ScriptBlockPlus" class="headerlink" title="ScriptBlockPlus"></a>ScriptBlockPlus</h3><p>脚本方块，点击&#x2F;踩踏&#x2F;挖掘时使用指令</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-691900-1-1.html">https://www.mcbbs.net/thread-691900-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/1-9-1-16-x-scriptblockplus-mechanics.78413/">https://www.spigotmc.org/resources/1-9-1-16-x-scriptblockplus-mechanics.78413/</a></p>
+<h3 id="VeinMiner"><a href="#VeinMiner" class="headerlink" title="VeinMiner"></a>VeinMiner</h3><p>连锁挖矿</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-600757-1-1.html">https://www.mcbbs.net/thread-600757-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/veinminer.12038/">https://www.spigotmc.org/resources/veinminer.12038/</a></p>
+<h3 id="Marriage-Master"><a href="#Marriage-Master" class="headerlink" title="Marriage Master"></a>Marriage Master</h3><p>结婚</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-905947-1-1.html">https://www.mcbbs.net/thread-905947-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/marriage-master-mc-1-7-1-16.19273/">https://www.spigotmc.org/resources/marriage-master-mc-1-7-1-16.19273/</a></p>
+<h3 id="IronElevators"><a href="#IronElevators" class="headerlink" title="IronElevators"></a>IronElevators</h3><p>铁块电梯</p>
+<p>mcbbs：<a target="_blank" rel="noopener" href="https://www.mcbbs.net/thread-612833-1-1.html">https://www.mcbbs.net/thread-612833-1-1.html</a></p>
+<p>spigot：<a target="_blank" rel="noopener" href="https://www.spigotmc.org/resources/ironelevators-1-4-6-1-16.19451/">https://www.spigotmc.org/resources/ironelevators-1-4-6-1-16.19451/</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Minecraft/" class="print-no-link">#Minecraft</a>
+      
+        <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="print-no-link">#服务器</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Minecraft开服教程</div>
+      <div>https://kaedelab.pages.dev/2023/07/23/Minecraft开服教程/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Kaede</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年7月23日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/07/23/%E4%B8%8D%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8%E6%96%87%E4%BB%B6%E5%9C%A8Markdown%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%9B%BE%E7%89%87/" title="不使用外部文件在Markdown中使用图片">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">不使用外部文件在Markdown中使用图片</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/07/23/%E7%BB%95%E8%BF%87Windows%E5%BC%80%E6%9C%BA%E5%AF%86%E7%A0%81/" title="绕过Windows开机密码">
+                        <span class="hidden-mobile">绕过Windows开机密码</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="#" target="_blank" rel="nofollow noopener">Powered by <span>Kaede</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
